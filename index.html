@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Single Photons · Camera Culture, MIT Media Lab</title>
+<meta name="description" content="Single-photon, transient and time-of-flight imaging research from the Camera Culture group at the MIT Media Lab, 2008 to today.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..500&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#F5F2EB;color:#171512;-webkit-font-smoothing:antialiased}
+a{color:#8A5F0B}
+a:hover{color:#171512}
+input::placeholder{color:#A39B8A}
+.prow:hover{background:#EFEBE1}
+@keyframes photonRise{from{transform:scaleY(0.04);opacity:.25}to{transform:scaleY(1);opacity:1}}
+@keyframes photonSweep{0%{left:-6%}100%{left:104%}}
+.hv1:hover{color:#171512 !important;border-bottom:1px solid #8A5F0B !important}
+.hv2:hover{background:#8A5F0B !important;color:#FBF9F4 !important;border:1px solid #8A5F0B !important}
+.hv3:hover{color:#D9A63C !important}
+.hv4:hover{color:#EFEAE0 !important}
+.hv5:hover{border:1px solid #171512 !important;background:#171512 !important;color:#F5F2EB !important}
+.hv6:hover{background:#8A5F0B !important}
+.hv7:hover{border:1px solid #171512 !important}
+.hv8:hover{background:#EFEBE1 !important}
+.hv9:hover{background:#E9E3D6 !important}
+.hv10:hover{color:#8A5F0B !important}
+.hv11:hover{color:#171512 !important}
+.hv12:hover{background:#EFEAE0 !important}
+</style>
+</head>
+<body>
+<div style="background:#F5F2EB">
+  <dc-import name="SiteNav"></dc-import>
+
+  <section style="max-width:1180px;margin:0 auto;padding:104px 32px 0">
+    <span style="font-family:'Space Mono',monospace;font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:#6F6858">Camera Culture Group · MIT Media Lab</span>
+    <h1 style="font-family:Newsreader,Georgia,serif;font-weight:400;font-size:clamp(42px,6.4vw,82px);line-height:1.02;letter-spacing:-0.025em;margin:22px 0 0;max-width:19ch;text-wrap:balance">Extreme Sensing with <span style="font-style:italic;color:#A2700D">Single Photons</span></h1>
+    <div style="display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:56px;margin-top:40px;align-items:start">
+      <div>
+        <h2 style="font-family:Newsreader,Georgia,serif;font-weight:400;font-size:30px;letter-spacing:-0.015em;color:#171512;margin:0">Applications</h2>
+        <div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:20px">
+          <a href="papers.html?topic=3d" style="font-family:'Space Mono',monospace;font-size:11.5px;letter-spacing:0.04em;color:#3E3931;text-decoration:none;border:1px solid #D6CEBC;border-radius:100px;padding:7px 14px;background:#FBF9F4" class="hv5">3D vision</a>
+          <a href="papers.html?topic=lowlight" style="font-family:'Space Mono',monospace;font-size:11.5px;letter-spacing:0.04em;color:#3E3931;text-decoration:none;border:1px solid #D6CEBC;border-radius:100px;padding:7px 14px;background:#FBF9F4" class="hv5">Low-light imaging</a>
+          <a href="papers.html?topic=transient" style="font-family:'Space Mono',monospace;font-size:11.5px;letter-spacing:0.04em;color:#3E3931;text-decoration:none;border:1px solid #D6CEBC;border-radius:100px;padding:7px 14px;background:#FBF9F4" class="hv5">High-speed imaging</a>
+          <a href="papers.html?topic=scattering" style="font-family:'Space Mono',monospace;font-size:11.5px;letter-spacing:0.04em;color:#3E3931;text-decoration:none;border:1px solid #D6CEBC;border-radius:100px;padding:7px 14px;background:#FBF9F4" class="hv5">Imaging through scattering</a>
+          <a href="papers.html?topic=nlos" style="font-family:'Space Mono',monospace;font-size:11.5px;letter-spacing:0.04em;color:#3E3931;text-decoration:none;border:1px solid #D6CEBC;border-radius:100px;padding:7px 14px;background:#FBF9F4" class="hv5">Non-line-of-sight imaging</a>
+        </div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:14px;padding-top:6px">
+        <div style="display:flex;justify-content:space-between;gap:16px;border-top:1px solid #E2DBCC;padding-top:11px">
+          <span style="font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:0.12em;text-transform:uppercase;color:#6F6858">Group founded</span>
+          <span style="font-family:'Space Mono',monospace;font-size:12px;color:#171512">2008</span>
+        </div>
+        <div style="display:flex;justify-content:space-between;gap:16px;border-top:1px solid #E2DBCC;padding-top:11px">
+          <span style="font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:0.12em;text-transform:uppercase;color:#6F6858">Published in</span>
+          <span style="font-family:'Space Mono',monospace;font-size:12px;color:#171512">ICCV · CVPR · Nature</span>
+        </div>
+        <div style="display:flex;justify-content:space-between;gap:16px;border-top:1px solid #E2DBCC;padding-top:11px">
+          <span style="font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:0.12em;text-transform:uppercase;color:#6F6858">Sensor cost today</span>
+          <span style="font-family:'Space Mono',monospace;font-size:12px;color:#171512">≈ $50</span>
+        </div>
+        <div style="display:flex;gap:12px;margin-top:12px">
+          <a href="projects.html" style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13.5px;background:#171512;color:#F5F2EB;text-decoration:none;padding:11px 18px;border-radius:2px" class="hv6">Browse the projects</a>
+          <a href="papers.html" style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13.5px;color:#171512;text-decoration:none;padding:11px 18px;border:1px solid #D6CEBC;border-radius:2px" class="hv7">All papers</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+    <section style="max-width:1180px;margin:72px auto 0;padding:0 32px">
+      <div style="position:relative;height:150px;border-top:1px solid #E2DBCC;border-bottom:1px solid #E2DBCC;overflow:hidden"><div style="position:absolute;inset:0;display:flex;align-items:flex-end;gap:1px;padding:10px 0 0"><div style="flex:1 1 0;height:1.80%;min-width:0;background:#CBC3B0;transform-origin:bottom;animation:photonRise 900ms cubic-bezier(0.16,1,0.3,1) both;animation-delay:0ms"></div><div style="flex:1 1 0;height:4.07%;min-width:0;background:#CBC3B0;transform-origin:bottom;animation:photonRise 900ms cubic-bezier(0.16,1,0.3,1) both;animation-delay:6ms"></div><div style="flex:1 1 0;height:1.80%;min-width:0;background:#CBC3B0;transform-origin:bottom;animation:photonRise 900ms cubic-bezier(0.16,1,0.3,1) both;animation-delay:12ms"></div><div style="flex:1 1 0;height:30.04%;min-width:0;background:#CBC3B0;transform-origin:bottom;animation:photonRise 900ms cubic-bezier(0.16,1,0.3,1) both;animation-delay:18ms"></div><div style="flex:1 1 0;height:29.45%;min-width:0;background:#CBC3B0;transform-origin:bottom;animation:photonRise 900ms cubic-bezier(0.16,1,0.3,1) both;animation-delay:24ms"></div><div style="flex:1 1 0;height:29.96%;min-width:0;background:#CBC3B0;transform-origin:bottom;animation:photonRise 900ms cubic-bezier(0.16,1,0.3,1) both;animation-delay:30ms"></div><div style="flex:1 1 0;height:30.85%;min-width:0;background:#CBC3B0;transform-origin:bottom;animation:photonRise 900ms cubic-bezier(0.16,1,0.3,1) both;animation-delay:36ms"></div><div style="flex:1 1 0;height:29.07%;min-width:0;background:#CBC3B0;transform-origin:bottom;animation:photonRise 900ms cubic-bezier(0.16,1,0.3,1) both;animation-delay:42ms"></div><div style="flex:1 1 0;height:29.89%;min-width:0;background:#CBC3B0;transform-origin:bottom;animation:photonRise 900ms cubic-bezier(0.16,1,0.3,1) both;animation-delay:48ms"></div><div style="flex:1 1 0;height:30.90%;min-width:0;background:#CBC3B0;transform-origin:bottom;animation:photonRise 900ms cubic-bezier(0.16,1,0.3,1) both;animation-delay:54ms"></div><div style="flex:1 1 0;height:32.81%;min-width:0;background:#CBC3B0;transform-origin:bottom;animation:photonRise 900ms cubic-bezier(0.16,1,0.3,1) both;animation-delay:60ms"></div><div style="flex:1 1 0;height:32.24%;min-width:0;background:#CBC3B0;transform-origin:bottom;animation:photonRise 900ms cubic-bezier(0.16,1,0.3,1) both;animation-delay:66ms"></div><div style="flex:1 1 0;height:29.58%;min-width:0;background:#CBC3B0;transform-origin:bottom;animation:photonRise 900ms cubic-bezier(0.16,1,0.3,1) both;animation-delay:72ms"></div><div style="flex:1 1 0;height:33.02%;min-width:0;background:#CBC3B0;transform-origin:bottom;animation:photonRise 900ms cubic-bezier(0.16,1,0.3,1) both;animation-delay:78ms"></div><div style="flex:1 1 0;height:32.23%;min-width:0;background:#CBC3B0;transform-origin:bottom;animation:photonRise 900ms cubic-bezier(0.16,1,0.3,1) both;animation-delay:84ms"></div><div style="flex:1 1 0;height:30.60%;min-width:0;background:#CBC3B0;transform-origin:bottom;animation:photonRise 900ms cubic-bezier(0.16,1,0.3,1) both;animation-delay:90ms"></div><div style="flex:1 1 0;height:32.53%;min-width:0;background:#CBC3B0;transform-origin:bottom;animation:photonRise 900ms cubic-bezier(0.16,1,0.3,1) both;animation-delay:96ms"></div><div style="flex:1 1 0;height:30.32%;min-width:0;background:#CBC3B0;transform-origin:bottom;animation:photonRise 900ms cubic-bezier(0.16,1,0.3,1) both;animation-delay:102ms"></div><div style="flex:1 1 0;height:31.01%;min-width:0;background:#CBC3B0;transform-origin:bottom;animation:photonRise 900ms cubic-bezier(0.16,1,0.3,1) both;animation-delay:108ms"></div><div style="flex:1 1 0;height:29.44%;min-width:0;background:#CBC3B0;transform-origin:bottom;animation:photonRise 900ms cubic-bezier(0.16,1,0.3,1) both;animation-delay:114ms"></div><div style="flex:1 1 0;height:31.01%;min-width:0;background:#CBC3B0;transform-origin:bottom;animation:photonRise 900ms cubic-bezier(0.16,1,0.3,1) both;animation-delay:120ms"></div><div style="flex:1 1 0;height:29.84%;min-width:0;background:#CBC3B0;transform-origin:bottom;animation:photonRise 900ms cubic-bezier(0.16,1,0.3,1) both;animation-delay:126ms"></div><div style="flex:1 1 0;height:29.94%;min-width:0;background:#CBC3B0;transform-origin:bottom;animation:photonRise 900ms cubic-bezier(0.16,1,0.3,1) both;animation-delay:132ms"></div><div style="flex:1 1 0;height:28.54%;min-width:0;background:#CBC3B0;transform-origin:bottom;animation:photonRise 900ms cubic-bezier(0.16,1,0.3,1) both;animation-delay:138ms"></div><div style="flex:1 1 0;height:26.92%;min-width:0;background:#CBC3B0;transform-origin:bottom;animation:photonRise 900ms cubic-bezier(0.16,1,0.3,1) both;animation-delay:144ms"></div><div style="flex:1 1 0;height:27.28%;min-width:0;background:#CBC3B0;transform-origin:bottom;animation:photonRise 900ms cubic-bezier(0.16,1,0.3,1) both;animation-delay:150ms"></div><div style="flex:1 1 0;height:27.49%;min-width:0;background:#CBC3B0;transform-origin:bottom;animation:photonRise 900ms cubic-bezier(0.16,1,0.3,1) both;animation-delay:156ms"></div><div style="flex:1 1 0;height:24.89%;min-width:0;background:#CBC3B0;transform-origin:bottom;animation:photonRise 900ms cubic-bezier(0.16,1,0.3,1) both;animation-delay:162ms"></div><div style="flex:1 1 0;height:25.02%;min-width:0;background:#CBC3B0;transform-origin:bottom;animation:photonRise 900ms cubic-bezier(0.16,1,0.3,1) both;animation-delay:168ms"></div><div style="flex:1 1 0;height:25.54%;min-width:0;background:#CBC3B0;transform-origin:bottom;animation:photonRise 900ms cubic-bezier(0.16,1,0.3,1) both;animation-delay:174ms"></div><div style="flex:1 1 0;height:27.32%;min-width:0;background:#CBC3B0;transform-origin:bottom;animation:photonRise 900ms cubic-bezier(0.16,1,0.3,1) both;animation-delay:180ms"></div><div style="flex:1 1 0;height:25.61%;min-width:0;background:#CBC3B0;transform-origin:bottom;animation:photonRise 900ms cubic-bezier(0.16,1,0.3,1) both;animation-delay:186ms"></div><div style="flex:1 1 0;height:23.16%;min-width:0;background:#CBC3B0;transform-origin:bottom;animation:photonRise 900ms cubic-bezier(0.16,1,0.3,1) both;animation-delay:192ms"></div><div style="flex:1 1 0;height:23.09%;min-width:0;background:#CBC3B0;transform-origin:bottom;animation:photonRise 900ms cubic-bezier(0.16,1,0.3,1) both;animation-delay:198ms"></div><div style="flex:1 1 0;height:21.54%;min-width:0;background:#CBC3B0;transform-origin:bottom;animation:photonRise 900ms cubic-bezier(0.16,1,0.3,1) both;animation-delay:204ms"></div><div style="flex:1 1 0;height:19.79%;min-width:0;background:#CBC3B0;transform-origin:bottom;animation:photonRise 900ms cubic-bezier(0.16,1,0.3,1) both;animation-delay:210ms"></div><div style="flex:1 1 0;height:18.16%;min-width:0;background:#CBC3B0;transform-origin:bottom;animation:photonRise 900ms cubic-bezier(0.16,1,0.3,1) both;animation-delay:216ms"></div><div style="flex:1 1 0;height:14.62%;min-width:0;background:#CBC3B0;transform-origin:bottom;animation:photonRise 900ms cubic-bezier(0.16,1,0.3,1) both;animation-delay:222ms"></div><div style="flex:1 1 0;height:9.76%;min-width:0;background:#CBC3B0;transform-origin:bottom;animation:photonRise 900ms cubic-bezier(0.16,1,0.3,1) both;animation-delay:228ms"></div><div style="flex:1 1 0;height:8.99%;min-width:0;background:#CBC3B0;transform-origin:bottom;animation:photonRise 900ms cubic-bezier(0.16,1,0.3,1) both;animation-delay:234ms"></div><div style="flex:1 1 0;height:11.40%;min-width:0;background:#CBC3B0;transform-origin:bottom;animation:photonRise 900ms cubic-bezier(0.16,1,0.3,1) both;animation-delay:240ms"></div><div style="flex:1 1 0;height:28.66%;min-width:0;background:#CBC3B0;transform-origin:bottom;animation:photonRise 900ms cubic-bezier(0.16,1,0.3,1) both;animation-delay:246ms"></div><div style="flex:1 1 0;height:54.48%;min-width:0;background:#CBC3B0;transform-origin:bottom;animation:photonRise 900ms cubic-bezier(0.16,1,0.3,1) both;animation-delay:252ms"></div><div style="flex:1 1 0;height:83.92%;min-width:0;background:#8A5F0B;transform-origin:bottom;animation:photonRise 900ms cubic-bezier(0.16,1,0.3,1) both;animation-delay:258ms"></div><div style="flex:1 1 0;height:99.00%;min-width:0;background:#8A5F0B;transform-origin:bottom;animation:photonRise 900ms cubic-bezier(0.16,1,0.3,1) both;animation-delay:264ms"></div><div style="flex:1 1 0;height:86.35%;min-width:0;background:#8A5F0B;transform-origin:bottom;animation:photonRise 900ms cubic-bezier(0.16,1,0.3,1) both;animation-delay:270ms"></div><div style="flex:1 1 0;height:53.77%;min-width:0;background:#CBC3B0;transform-origin:bottom;animation:photonRise 900ms cubic-bezier(0.16,1,0.3,1) both;animation-delay:276ms"></div><div style="flex:1 1 0;height:22.07%;min-width:0;background:#CBC3B0;transform-origin:bottom;animation:photonRise 900ms cubic-bezier(0.16,1,0.3,1) both;animation-delay:282ms"></div><div style="flex:1 1 0;height:9.49%;min-width:0;background:#CBC3B0;transform-origin:bottom;animation:photonRise 900ms cubic-bezier(0.16,1,0.3,1) both;animation-delay:288ms"></div><div style="flex:1 1 0;height:23.60%;min-width:0;background:#8A5F0B;transform-origin:bottom;animation:photonRise 900ms cubic-bezier(0.16,1,0.3,1) both;animation-delay:294ms"></div><div style="flex:1 1 0;height:21.21%;min-width:0;background:#8A5F0B;transform-origin:bottom;animation:photonRise 900ms cubic-bezier(0.16,1,0.3,1) both;animation-delay:300ms"></div><div style="flex:1 1 0;height:18.70%;min-width:0;background:#8A5F0B;transform-origin:bottom;animation:photonRise 900ms cubic-bezier(0.16,1,0.3,1) both;animation-delay:306ms"></div><div style="flex:1 1 0;height:20.29%;min-width:0;background:#8A5F0B;transform-origin:bottom;animation:photonRise 900ms cubic-bezier(0.16,1,0.3,1) both;animation-delay:312ms"></div><div style="flex:1 1 0;height:18.00%;min-width:0;background:#CBC3B0;transform-origin:bottom;animation:photonRise 900ms cubic-bezier(0.16,1,0.3,1) both;animation-delay:318ms"></div><div style="flex:1 1 0;height:16.27%;min-width:0;background:#CBC3B0;transform-origin:bottom;animation:photonRise 900ms cubic-bezier(0.16,1,0.3,1) both;animation-delay:324ms"></div><div style="flex:1 1 0;height:17.21%;min-width:0;background:#CBC3B0;transform-origin:bottom;animation:photonRise 900ms cubic-bezier(0.16,1,0.3,1) both;animation-delay:330ms"></div><div style="flex:1 1 0;height:14.58%;min-width:0;background:#CBC3B0;transform-origin:bottom;animation:photonRise 900ms cubic-bezier(0.16,1,0.3,1) both;animation-delay:336ms"></div><div style="flex:1 1 0;height:12.65%;min-width:0;background:#CBC3B0;transform-origin:bottom;animation:photonRise 900ms cubic-bezier(0.16,1,0.3,1) both;animation-delay:342ms"></div><div style="flex:1 1 0;height:12.19%;min-width:0;background:#CBC3B0;transform-origin:bottom;animation:photonRise 900ms cubic-bezier(0.16,1,0.3,1) both;animation-delay:348ms"></div><div style="flex:1 1 0;height:10.87%;min-width:0;background:#CBC3B0;transform-origin:bottom;animation:photonRise 900ms cubic-bezier(0.16,1,0.3,1) both;animation-delay:354ms"></div><div style="flex:1 1 0;height:10.15%;min-width:0;background:#CBC3B0;transform-origin:bottom;animation:photonRise 900ms cubic-bezier(0.16,1,0.3,1) both;animation-delay:360ms"></div><div style="flex:1 1 0;height:9.14%;min-width:0;background:#CBC3B0;transform-origin:bottom;animation:photonRise 900ms cubic-bezier(0.16,1,0.3,1) both;animation-delay:366ms"></div><div style="flex:1 1 0;height:11.60%;min-width:0;background:#CBC3B0;transform-origin:bottom;animation:photonRise 900ms cubic-bezier(0.16,1,0.3,1) both;animation-delay:372ms"></div><div style="flex:1 1 0;height:8.29%;min-width:0;background:#CBC3B0;transform-origin:bottom;animation:photonRise 900ms cubic-bezier(0.16,1,0.3,1) both;animation-delay:378ms"></div><div style="flex:1 1 0;height:7.99%;min-width:0;background:#CBC3B0;transform-origin:bottom;animation:photonRise 900ms cubic-bezier(0.16,1,0.3,1) both;animation-delay:384ms"></div><div style="flex:1 1 0;height:7.48%;min-width:0;background:#CBC3B0;transform-origin:bottom;animation:photonRise 900ms cubic-bezier(0.16,1,0.3,1) both;animation-delay:390ms"></div><div style="flex:1 1 0;height:8.60%;min-width:0;background:#CBC3B0;transform-origin:bottom;animation:photonRise 900ms cubic-bezier(0.16,1,0.3,1) both;animation-delay:396ms"></div><div style="flex:1 1 0;height:7.13%;min-width:0;background:#CBC3B0;transform-origin:bottom;animation:photonRise 900ms cubic-bezier(0.16,1,0.3,1) both;animation-delay:402ms"></div><div style="flex:1 1 0;height:7.19%;min-width:0;background:#CBC3B0;transform-origin:bottom;animation:photonRise 900ms cubic-bezier(0.16,1,0.3,1) both;animation-delay:408ms"></div><div style="flex:1 1 0;height:6.66%;min-width:0;background:#CBC3B0;transform-origin:bottom;animation:photonRise 900ms cubic-bezier(0.16,1,0.3,1) both;animation-delay:414ms"></div><div style="flex:1 1 0;height:6.45%;min-width:0;background:#CBC3B0;transform-origin:bottom;animation:photonRise 900ms cubic-bezier(0.16,1,0.3,1) both;animation-delay:420ms"></div><div style="flex:1 1 0;height:6.57%;min-width:0;background:#CBC3B0;transform-origin:bottom;animation:photonRise 900ms cubic-bezier(0.16,1,0.3,1) both;animation-delay:426ms"></div><div style="flex:1 1 0;height:5.29%;min-width:0;background:#CBC3B0;transform-origin:bottom;animation:photonRise 900ms cubic-bezier(0.16,1,0.3,1) both;animation-delay:432ms"></div><div style="flex:1 1 0;height:4.60%;min-width:0;background:#CBC3B0;transform-origin:bottom;animation:photonRise 900ms cubic-bezier(0.16,1,0.3,1) both;animation-delay:438ms"></div><div style="flex:1 1 0;height:4.85%;min-width:0;background:#CBC3B0;transform-origin:bottom;animation:photonRise 900ms cubic-bezier(0.16,1,0.3,1) both;animation-delay:444ms"></div><div style="flex:1 1 0;height:5.84%;min-width:0;background:#CBC3B0;transform-origin:bottom;animation:photonRise 900ms cubic-bezier(0.16,1,0.3,1) both;animation-delay:450ms"></div><div style="flex:1 1 0;height:4.32%;min-width:0;background:#CBC3B0;transform-origin:bottom;animation:photonRise 900ms cubic-bezier(0.16,1,0.3,1) both;animation-delay:456ms"></div><div style="flex:1 1 0;height:5.74%;min-width:0;background:#CBC3B0;transform-origin:bottom;animation:photonRise 900ms cubic-bezier(0.16,1,0.3,1) both;animation-delay:462ms"></div><div style="flex:1 1 0;height:4.04%;min-width:0;background:#CBC3B0;transform-origin:bottom;animation:photonRise 900ms cubic-bezier(0.16,1,0.3,1) both;animation-delay:468ms"></div><div style="flex:1 1 0;height:3.46%;min-width:0;background:#CBC3B0;transform-origin:bottom;animation:photonRise 900ms cubic-bezier(0.16,1,0.3,1) both;animation-delay:474ms"></div><div style="flex:1 1 0;height:5.38%;min-width:0;background:#CBC3B0;transform-origin:bottom;animation:photonRise 900ms cubic-bezier(0.16,1,0.3,1) both;animation-delay:480ms"></div><div style="flex:1 1 0;height:4.33%;min-width:0;background:#CBC3B0;transform-origin:bottom;animation:photonRise 900ms cubic-bezier(0.16,1,0.3,1) both;animation-delay:486ms"></div><div style="flex:1 1 0;height:3.18%;min-width:0;background:#CBC3B0;transform-origin:bottom;animation:photonRise 900ms cubic-bezier(0.16,1,0.3,1) both;animation-delay:492ms"></div><div style="flex:1 1 0;height:3.62%;min-width:0;background:#CBC3B0;transform-origin:bottom;animation:photonRise 900ms cubic-bezier(0.16,1,0.3,1) both;animation-delay:498ms"></div><div style="flex:1 1 0;height:2.96%;min-width:0;background:#CBC3B0;transform-origin:bottom;animation:photonRise 900ms cubic-bezier(0.16,1,0.3,1) both;animation-delay:504ms"></div><div style="flex:1 1 0;height:3.71%;min-width:0;background:#CBC3B0;transform-origin:bottom;animation:photonRise 900ms cubic-bezier(0.16,1,0.3,1) both;animation-delay:510ms"></div><div style="flex:1 1 0;height:3.94%;min-width:0;background:#CBC3B0;transform-origin:bottom;animation:photonRise 900ms cubic-bezier(0.16,1,0.3,1) both;animation-delay:516ms"></div><div style="flex:1 1 0;height:3.47%;min-width:0;background:#CBC3B0;transform-origin:bottom;animation:photonRise 900ms cubic-bezier(0.16,1,0.3,1) both;animation-delay:522ms"></div><div style="flex:1 1 0;height:3.65%;min-width:0;background:#CBC3B0;transform-origin:bottom;animation:photonRise 900ms cubic-bezier(0.16,1,0.3,1) both;animation-delay:528ms"></div><div style="flex:1 1 0;height:5.02%;min-width:0;background:#CBC3B0;transform-origin:bottom;animation:photonRise 900ms cubic-bezier(0.16,1,0.3,1) both;animation-delay:534ms"></div><div style="flex:1 1 0;height:4.62%;min-width:0;background:#CBC3B0;transform-origin:bottom;animation:photonRise 900ms cubic-bezier(0.16,1,0.3,1) both;animation-delay:540ms"></div><div style="flex:1 1 0;height:2.53%;min-width:0;background:#CBC3B0;transform-origin:bottom;animation:photonRise 900ms cubic-bezier(0.16,1,0.3,1) both;animation-delay:546ms"></div><div style="flex:1 1 0;height:3.63%;min-width:0;background:#CBC3B0;transform-origin:bottom;animation:photonRise 900ms cubic-bezier(0.16,1,0.3,1) both;animation-delay:552ms"></div><div style="flex:1 1 0;height:4.20%;min-width:0;background:#CBC3B0;transform-origin:bottom;animation:photonRise 900ms cubic-bezier(0.16,1,0.3,1) both;animation-delay:558ms"></div><div style="flex:1 1 0;height:4.28%;min-width:0;background:#CBC3B0;transform-origin:bottom;animation:photonRise 900ms cubic-bezier(0.16,1,0.3,1) both;animation-delay:564ms"></div><div style="flex:1 1 0;height:4.15%;min-width:0;background:#CBC3B0;transform-origin:bottom;animation:photonRise 900ms cubic-bezier(0.16,1,0.3,1) both;animation-delay:570ms"></div><div style="flex:1 1 0;height:4.63%;min-width:0;background:#CBC3B0;transform-origin:bottom;animation:photonRise 900ms cubic-bezier(0.16,1,0.3,1) both;animation-delay:576ms"></div><div style="flex:1 1 0;height:2.25%;min-width:0;background:#CBC3B0;transform-origin:bottom;animation:photonRise 900ms cubic-bezier(0.16,1,0.3,1) both;animation-delay:582ms"></div><div style="flex:1 1 0;height:1.94%;min-width:0;background:#CBC3B0;transform-origin:bottom;animation:photonRise 900ms cubic-bezier(0.16,1,0.3,1) both;animation-delay:588ms"></div><div style="flex:1 1 0;height:3.20%;min-width:0;background:#CBC3B0;transform-origin:bottom;animation:photonRise 900ms cubic-bezier(0.16,1,0.3,1) both;animation-delay:594ms"></div><div style="flex:1 1 0;height:2.50%;min-width:0;background:#CBC3B0;transform-origin:bottom;animation:photonRise 900ms cubic-bezier(0.16,1,0.3,1) both;animation-delay:600ms"></div><div style="flex:1 1 0;height:4.47%;min-width:0;background:#CBC3B0;transform-origin:bottom;animation:photonRise 900ms cubic-bezier(0.16,1,0.3,1) both;animation-delay:606ms"></div><div style="flex:1 1 0;height:1.88%;min-width:0;background:#CBC3B0;transform-origin:bottom;animation:photonRise 900ms cubic-bezier(0.16,1,0.3,1) both;animation-delay:612ms"></div><div style="flex:1 1 0;height:2.12%;min-width:0;background:#CBC3B0;transform-origin:bottom;animation:photonRise 900ms cubic-bezier(0.16,1,0.3,1) both;animation-delay:618ms"></div><div style="flex:1 1 0;height:3.09%;min-width:0;background:#CBC3B0;transform-origin:bottom;animation:photonRise 900ms cubic-bezier(0.16,1,0.3,1) both;animation-delay:624ms"></div><div style="flex:1 1 0;height:4.25%;min-width:0;background:#CBC3B0;transform-origin:bottom;animation:photonRise 900ms cubic-bezier(0.16,1,0.3,1) both;animation-delay:630ms"></div><div style="flex:1 1 0;height:2.59%;min-width:0;background:#CBC3B0;transform-origin:bottom;animation:photonRise 900ms cubic-bezier(0.16,1,0.3,1) both;animation-delay:636ms"></div><div style="flex:1 1 0;height:3.25%;min-width:0;background:#CBC3B0;transform-origin:bottom;animation:photonRise 900ms cubic-bezier(0.16,1,0.3,1) both;animation-delay:642ms"></div><div style="flex:1 1 0;height:3.67%;min-width:0;background:#CBC3B0;transform-origin:bottom;animation:photonRise 900ms cubic-bezier(0.16,1,0.3,1) both;animation-delay:648ms"></div><div style="flex:1 1 0;height:4.34%;min-width:0;background:#CBC3B0;transform-origin:bottom;animation:photonRise 900ms cubic-bezier(0.16,1,0.3,1) both;animation-delay:654ms"></div><div style="flex:1 1 0;height:2.11%;min-width:0;background:#CBC3B0;transform-origin:bottom;animation:photonRise 900ms cubic-bezier(0.16,1,0.3,1) both;animation-delay:660ms"></div><div style="flex:1 1 0;height:3.40%;min-width:0;background:#CBC3B0;transform-origin:bottom;animation:photonRise 900ms cubic-bezier(0.16,1,0.3,1) both;animation-delay:666ms"></div><div style="flex:1 1 0;height:1.80%;min-width:0;background:#CBC3B0;transform-origin:bottom;animation:photonRise 900ms cubic-bezier(0.16,1,0.3,1) both;animation-delay:672ms"></div><div style="flex:1 1 0;height:1.80%;min-width:0;background:#CBC3B0;transform-origin:bottom;animation:photonRise 900ms cubic-bezier(0.16,1,0.3,1) both;animation-delay:678ms"></div><div style="flex:1 1 0;height:2.94%;min-width:0;background:#CBC3B0;transform-origin:bottom;animation:photonRise 900ms cubic-bezier(0.16,1,0.3,1) both;animation-delay:684ms"></div><div style="flex:1 1 0;height:2.80%;min-width:0;background:#CBC3B0;transform-origin:bottom;animation:photonRise 900ms cubic-bezier(0.16,1,0.3,1) both;animation-delay:690ms"></div><div style="flex:1 1 0;height:2.82%;min-width:0;background:#CBC3B0;transform-origin:bottom;animation:photonRise 900ms cubic-bezier(0.16,1,0.3,1) both;animation-delay:696ms"></div><div style="flex:1 1 0;height:4.16%;min-width:0;background:#CBC3B0;transform-origin:bottom;animation:photonRise 900ms cubic-bezier(0.16,1,0.3,1) both;animation-delay:702ms"></div><div style="flex:1 1 0;height:2.61%;min-width:0;background:#CBC3B0;transform-origin:bottom;animation:photonRise 900ms cubic-bezier(0.16,1,0.3,1) both;animation-delay:708ms"></div><div style="flex:1 1 0;height:4.38%;min-width:0;background:#CBC3B0;transform-origin:bottom;animation:photonRise 900ms cubic-bezier(0.16,1,0.3,1) both;animation-delay:714ms"></div><div style="flex:1 1 0;height:2.19%;min-width:0;background:#CBC3B0;transform-origin:bottom;animation:photonRise 900ms cubic-bezier(0.16,1,0.3,1) both;animation-delay:720ms"></div><div style="flex:1 1 0;height:3.67%;min-width:0;background:#CBC3B0;transform-origin:bottom;animation:photonRise 900ms cubic-bezier(0.16,1,0.3,1) both;animation-delay:726ms"></div><div style="flex:1 1 0;height:4.30%;min-width:0;background:#CBC3B0;transform-origin:bottom;animation:photonRise 900ms cubic-bezier(0.16,1,0.3,1) both;animation-delay:732ms"></div><div style="flex:1 1 0;height:1.80%;min-width:0;background:#CBC3B0;transform-origin:bottom;animation:photonRise 900ms cubic-bezier(0.16,1,0.3,1) both;animation-delay:738ms"></div><div style="flex:1 1 0;height:1.80%;min-width:0;background:#CBC3B0;transform-origin:bottom;animation:photonRise 900ms cubic-bezier(0.16,1,0.3,1) both;animation-delay:744ms"></div><div style="flex:1 1 0;height:3.55%;min-width:0;background:#CBC3B0;transform-origin:bottom;animation:photonRise 900ms cubic-bezier(0.16,1,0.3,1) both;animation-delay:750ms"></div><div style="flex:1 1 0;height:2.27%;min-width:0;background:#CBC3B0;transform-origin:bottom;animation:photonRise 900ms cubic-bezier(0.16,1,0.3,1) both;animation-delay:756ms"></div><div style="flex:1 1 0;height:1.98%;min-width:0;background:#CBC3B0;transform-origin:bottom;animation:photonRise 900ms cubic-bezier(0.16,1,0.3,1) both;animation-delay:762ms"></div><div style="position:absolute;top:0;bottom:0;width:1px;background:rgba(138,95,11,0.5);animation:photonSweep 3.4s linear infinite"></div></div></div>
+      <div style="display:flex;justify-content:space-between;gap:24px;margin-top:10px;font-family:'Space Mono',monospace;font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:#6F6858">
+        <span>Photon arrival histogram · # photons per bin</span>
+        <span>128 time bins &nbsp;·&nbsp; ~80 ps each</span>
+      </div>
+    </section>
+  
+
+  <section id="history" style="max-width:1180px;margin:104px auto 0;padding:0 32px">
+    <div style="display:flex;align-items:baseline;justify-content:space-between;gap:24px;border-bottom:1px solid #171512;padding-bottom:14px;flex-wrap:wrap">
+      <h2 style="font-family:Newsreader,Georgia,serif;font-weight:400;font-size:clamp(30px,3.6vw,46px);letter-spacing:-0.02em;margin:0">An eighteen-year lineage</h2>
+      <span style="font-family:'Space Mono',monospace;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:#6F6858">2008 → today</span>
+    </div>
+
+    <div style="display:flex;flex-direction:column">
+      <div style="display:grid;grid-template-columns:112px minmax(0,1fr) 150px;gap:28px;padding:26px 0;border-bottom:1px solid #E2DBCC;align-items:start">
+        <span style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.06em;color:#8A5F0B;padding-top:4px">2008</span>
+        <div>
+          <h3 style="font-family:Newsreader,Georgia,serif;font-weight:500;font-size:26px;line-height:1.2;letter-spacing:-0.015em;margin:0 0 7px">Camera Culture founded</h3>
+          <p style="font-family:Newsreader,Georgia,serif;font-size:16.5px;line-height:1.5;color:#5A544A;margin:0">The group is established at the MIT Media Lab under Ramesh Raskar.</p>
+        </div>
+        <span style="font-family:'Space Mono',monospace;font-size:10.5px;line-height:1.7;letter-spacing:0.06em;text-transform:uppercase;color:#6F6858;padding-top:6px">MIT Media Lab</span>
+      </div>
+      <a href="https://ieeexplore.ieee.org/abstract/document/5459160" style="display:grid;grid-template-columns:112px minmax(0,1fr) 150px;gap:28px;padding:26px 0;border-bottom:1px solid #E2DBCC;text-decoration:none;color:#171512;align-items:start" class="hv8">
+        <span style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.06em;color:#8A5F0B;padding-top:4px">Oct 2009</span>
+        <div>
+          <h3 style="font-family:Newsreader,Georgia,serif;font-weight:500;font-size:26px;line-height:1.2;letter-spacing:-0.015em;margin:0 0 7px">The principle of seeing around corners</h3>
+          <p style="font-family:Newsreader,Georgia,serif;font-size:16.5px;line-height:1.5;color:#5A544A;margin:0">Kirmani et al., “Looking around the corner using transient imaging.” The first formulation of hidden-scene recovery from multi-bounce light.</p>
+        </div>
+        <span style="font-family:'Space Mono',monospace;font-size:10.5px;line-height:1.7;letter-spacing:0.06em;text-transform:uppercase;color:#6F6858;padding-top:6px">ICCV<br><span style="color:#8A5F0B">Marr Prize, Hon. Mention</span></span>
+      </a>
+
+      <a href="https://www.nature.com/articles/ncomms1747" style="display:grid;grid-template-columns:112px minmax(0,1fr) 150px;gap:28px;padding:26px 0;border-bottom:1px solid #E2DBCC;text-decoration:none;color:#171512;align-items:start" class="hv8">
+        <span style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.06em;color:#8A5F0B;padding-top:4px">Mar 2012</span>
+        <div>
+          <h3 style="font-family:Newsreader,Georgia,serif;font-weight:500;font-size:26px;line-height:1.2;letter-spacing:-0.015em;margin:0 0 7px">First experimental demonstration around a corner</h3>
+          <p style="font-family:Newsreader,Georgia,serif;font-size:16.5px;line-height:1.5;color:#5A544A;margin:0">Velten et al., “Recovering three-dimensional shape around a corner using ultrafast time-of-flight imaging.”</p>
+        </div>
+        <span style="font-family:'Space Mono',monospace;font-size:10.5px;line-height:1.7;letter-spacing:0.06em;text-transform:uppercase;color:#6F6858;padding-top:6px">Nature Communications</span>
+      </a>
+
+      <a href="https://dl.acm.org/doi/abs/10.1145/2461912.2461928" style="display:grid;grid-template-columns:112px minmax(0,1fr) 150px;gap:28px;padding:26px 0;border-bottom:1px solid #E2DBCC;text-decoration:none;color:#171512;align-items:start" class="hv8">
+        <span style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.06em;color:#8A5F0B;padding-top:4px">Jul 2013</span>
+        <div>
+          <h3 style="font-family:Newsreader,Georgia,serif;font-weight:500;font-size:26px;line-height:1.2;letter-spacing:-0.015em;margin:0 0 7px">Femto-photography</h3>
+          <p style="font-family:Newsreader,Georgia,serif;font-size:16.5px;line-height:1.5;color:#5A544A;margin:0">Velten et al., “Capturing and visualizing the propagation of light.” Light in flight, filmed at a trillion frames per second.</p>
+        </div>
+        <span style="font-family:'Space Mono',monospace;font-size:10.5px;line-height:1.7;letter-spacing:0.06em;text-transform:uppercase;color:#6F6858;padding-top:6px">ACM TOG · SIGGRAPH<br><span style="color:#8A5F0B">Test of Time Award</span></span>
+      </a>
+
+      <a href="https://www.darpa.mil/news/2015/untapped-information-photons" style="display:grid;grid-template-columns:112px minmax(0,1fr) 150px;gap:28px;padding:26px 0;border-bottom:1px solid #E2DBCC;text-decoration:none;color:#171512;align-items:start" class="hv8">
+        <span style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.06em;color:#8A5F0B;padding-top:4px">May 2015</span>
+        <div>
+          <h3 style="font-family:Newsreader,Georgia,serif;font-weight:500;font-size:26px;line-height:1.2;letter-spacing:-0.015em;margin:0 0 7px">DARPA launches REVEAL</h3>
+          <p style="font-family:Newsreader,Georgia,serif;font-size:16.5px;line-height:1.5;color:#5A544A;margin:0">“Shedding light on untapped information in photons.” The field the lab opened becomes a national research program.</p>
+        </div>
+        <span style="font-family:'Space Mono',monospace;font-size:10.5px;line-height:1.7;letter-spacing:0.06em;text-transform:uppercase;color:#6F6858;padding-top:6px">Program announcement</span>
+      </a>
+
+      <a href="https://www.nature.com/articles/srep33946" style="display:grid;grid-template-columns:112px minmax(0,1fr) 150px;gap:28px;padding:26px 0;border-bottom:1px solid #E2DBCC;text-decoration:none;color:#171512;align-items:start" class="hv8">
+        <span style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.06em;color:#8A5F0B;padding-top:4px">Sep 2016</span>
+        <div>
+          <h3 style="font-family:Newsreader,Georgia,serif;font-weight:500;font-size:26px;line-height:1.2;letter-spacing:-0.015em;margin:0 0 7px">Imaging through thick tissue, and through closed books</h3>
+          <p style="font-family:Newsreader,Georgia,serif;font-size:16.5px;line-height:1.5;color:#5A544A;margin:0">Satat et al., “All photons imaging through volumetric scattering,” alongside Redo-Sanchez et al. on terahertz time-gated spectral imaging.</p>
+        </div>
+        <span style="font-family:'Space Mono',monospace;font-size:10.5px;line-height:1.7;letter-spacing:0.06em;text-transform:uppercase;color:#6F6858;padding-top:6px">Scientific Reports<br>Nature Communications</span>
+      </a>
+
+      <a href="https://ieeexplore.ieee.org/abstract/document/8368463" style="display:grid;grid-template-columns:112px minmax(0,1fr) 150px;gap:28px;padding:26px 0;border-bottom:1px solid #E2DBCC;text-decoration:none;color:#171512;align-items:start" class="hv8">
+        <span style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.06em;color:#8A5F0B;padding-top:4px">May 2018</span>
+        <div>
+          <h3 style="font-family:Newsreader,Georgia,serif;font-weight:500;font-size:26px;line-height:1.2;letter-spacing:-0.015em;margin:0 0 7px">Photography through realistic fog</h3>
+          <p style="font-family:Newsreader,Georgia,serif;font-size:16.5px;line-height:1.5;color:#5A544A;margin:0">Satat et al. Time-resolved measurement separates the photons that travelled straight through from those that scattered.</p>
+        </div>
+        <span style="font-family:'Space Mono',monospace;font-size:10.5px;line-height:1.7;letter-spacing:0.06em;text-transform:uppercase;color:#6F6858;padding-top:6px">ICCP</span>
+      </a>
+
+      <a href="https://arxiv.org/abs/2304.01308" style="display:grid;grid-template-columns:112px minmax(0,1fr) 150px;gap:28px;padding:26px 0;border-bottom:1px solid #E2DBCC;text-decoration:none;color:#171512;align-items:start" class="hv8">
+        <span style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.06em;color:#8A5F0B;padding-top:4px">Jun 2023</span>
+        <div>
+          <h3 style="font-family:Newsreader,Georgia,serif;font-weight:500;font-size:26px;line-height:1.2;letter-spacing:-0.015em;margin:0 0 7px">Two-bounce imaging with a single SPAD</h3>
+          <p style="font-family:Newsreader,Georgia,serif;font-size:16.5px;line-height:1.5;color:#5A544A;margin:0">Somasundaram et al., “Role of transients in two-bounce non-line-of-sight imaging.” The pivot from lab lasers toward commodity sensors.</p>
+        </div>
+        <span style="font-family:'Space Mono',monospace;font-size:10.5px;line-height:1.7;letter-spacing:0.06em;text-transform:uppercase;color:#6F6858;padding-top:6px">CVPR</span>
+      </a>
+
+      <a href="http://platonerf.github.io" style="display:grid;grid-template-columns:112px minmax(0,1fr) 150px;gap:28px;padding:26px 0;border-bottom:1px solid #E2DBCC;text-decoration:none;color:#171512;align-items:start" class="hv8">
+        <span style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.06em;color:#8A5F0B;padding-top:4px">Jun 2024</span>
+        <div>
+          <h3 style="font-family:Newsreader,Georgia,serif;font-weight:500;font-size:26px;line-height:1.2;letter-spacing:-0.015em;margin:0 0 7px">PlatoNeRF</h3>
+          <p style="font-family:Newsreader,Georgia,serif;font-size:16.5px;line-height:1.5;color:#5A544A;margin:0">Klinghoffer et al. 3D reconstruction in Plato's cave — recovering full scene geometry from a single view and two-bounce lidar shadows.</p>
+        </div>
+        <span style="font-family:'Space Mono',monospace;font-size:10.5px;line-height:1.7;letter-spacing:0.06em;text-transform:uppercase;color:#6F6858;padding-top:6px">CVPR</span>
+      </a>
+
+      <a href="https://nikhilbehari.github.io/bls3d-web/" style="display:grid;grid-template-columns:112px minmax(0,1fr) 150px;gap:28px;padding:26px 0;border-bottom:1px solid #E2DBCC;text-decoration:none;color:#171512;align-items:start" class="hv8">
+        <span style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.06em;color:#8A5F0B;padding-top:4px">2025</span>
+        <div>
+          <h3 style="font-family:Newsreader,Georgia,serif;font-weight:500;font-size:26px;line-height:1.2;letter-spacing:-0.015em;margin:0 0 7px">Commodity sensors, real tasks</h3>
+          <p style="font-family:Newsreader,Georgia,serif;font-size:16.5px;line-height:1.5;color:#5A544A;margin:0">Handheld 3D scanning from diffuse lidar and RGB (Behari et al.), and the first robot to navigate by what it sees around a corner (Young et al.).</p>
+        </div>
+        <span style="font-family:'Space Mono',monospace;font-size:10.5px;line-height:1.7;letter-spacing:0.06em;text-transform:uppercase;color:#6F6858;padding-top:6px">CVPR · ICRA</span>
+      </a>
+
+      <a href="https://www.nature.com/articles/s41586-026-10502-x" style="display:grid;grid-template-columns:112px minmax(0,1fr) 150px;gap:28px;padding:30px 0;border-bottom:1px solid #171512;text-decoration:none;color:#171512;align-items:start;background:#EFEBE1" class="hv9">
+        <span style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.06em;color:#8A5F0B;padding-top:4px">Apr 2026</span>
+        <div>
+          <h3 style="font-family:Newsreader,Georgia,serif;font-weight:500;font-size:30px;line-height:1.15;letter-spacing:-0.02em;margin:0 0 8px">Seeing around corners with the LiDAR in your phone</h3>
+          <p style="font-family:Newsreader,Georgia,serif;font-size:17px;line-height:1.5;color:#4A453B;margin:0">Somasundaram et al., “Imaging hidden objects with consumer LiDAR via motion induced sampling.” Capability that once needed a $100k laboratory, running on a $50 smartphone-grade sensor.</p>
+        </div>
+        <span style="font-family:'Space Mono',monospace;font-size:10.5px;line-height:1.7;letter-spacing:0.06em;text-transform:uppercase;color:#6F6858;padding-top:6px">Nature<br><span style="color:#8A5F0B">cornar.media.mit.edu</span></span>
+      </a>
+    </div>
+    <div style="margin-top:22px">
+      <a href="papers.html" style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13.5px;color:#171512;text-decoration:none;border-bottom:1px solid #8A5F0B" class="hv10">The complete paper record →</a>
+    </div>
+  </section>
+
+  <section style="max-width:1180px;margin:112px auto 0;padding:0 32px">
+    <div style="display:flex;align-items:baseline;justify-content:space-between;gap:24px;border-bottom:1px solid #171512;padding-bottom:14px;flex-wrap:wrap">
+      <h2 style="font-family:Newsreader,Georgia,serif;font-weight:400;font-size:clamp(30px,3.6vw,46px);letter-spacing:-0.02em;margin:0">Recent work</h2>
+      <a href="projects.html" style="font-family:'Space Mono',monospace;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:#8A5F0B;text-decoration:none" class="hv11">All projects →</a>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:28px;margin-top:32px">
+      <a href="https://cornar.media.mit.edu" style="text-decoration:none;color:#171512;display:flex;flex-direction:column">
+        <div style="aspect-ratio:16/10;background:#E6E0D3;overflow:hidden;border:1px solid #E2DBCC">
+          <img src="https://photons.media.mit.edu/assets/img/projects/nlos_track.gif" alt="Real-time tracking of an object hidden around a corner" style="width:100%;height:100%;object-fit:cover;display:block">
+        </div>
+        <span style="font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:0.12em;text-transform:uppercase;color:#6F6858;margin-top:14px">Nature · 2026</span>
+        <h3 style="font-family:Newsreader,Georgia,serif;font-weight:500;font-size:21px;line-height:1.25;letter-spacing:-0.01em;margin:7px 0 6px">Tracking hidden objects with consumer LiDAR</h3>
+        <p style="font-family:Newsreader,Georgia,serif;font-size:15.5px;line-height:1.5;color:#5A544A;margin:0">Somasundaram et al.</p>
+      </a>
+      <a href="https://nikhilbehari.github.io/bls3d-web/" style="text-decoration:none;color:#171512;display:flex;flex-direction:column">
+        <div style="aspect-ratio:16/10;background:#E6E0D3;overflow:hidden;border:1px solid #E2DBCC">
+          <img src="https://photons.media.mit.edu/assets/img/projects/bls3d.gif" alt="Handheld 3D scanning with diffuse lidar and RGB" style="width:100%;height:100%;object-fit:cover;display:block">
+        </div>
+        <span style="font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:0.12em;text-transform:uppercase;color:#6F6858;margin-top:14px">CVPR · 2025</span>
+        <h3 style="font-family:Newsreader,Georgia,serif;font-weight:500;font-size:21px;line-height:1.25;letter-spacing:-0.01em;margin:7px 0 6px">Blurred LiDAR for sharper 3D</h3>
+        <p style="font-family:Newsreader,Georgia,serif;font-size:15.5px;line-height:1.5;color:#5A544A;margin:0">Behari et al.</p>
+      </a>
+      <a href="https://arxiv.org/abs/2410.03555" style="text-decoration:none;color:#171512;display:flex;flex-direction:column">
+        <div style="aspect-ratio:16/10;background:#E6E0D3;overflow:hidden;border:1px solid #E2DBCC">
+          <img src="https://photons.media.mit.edu/assets/img/projects/enhancing.gif" alt="Mobile robot navigating an L-shaped corridor using NLOS sensing" style="width:100%;height:100%;object-fit:cover;display:block">
+        </div>
+        <span style="font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:0.12em;text-transform:uppercase;color:#6F6858;margin-top:14px">ICRA · 2025</span>
+        <h3 style="font-family:Newsreader,Georgia,serif;font-weight:500;font-size:21px;line-height:1.25;letter-spacing:-0.01em;margin:7px 0 6px">Autonomous navigation past hidden obstacles</h3>
+        <p style="font-family:Newsreader,Georgia,serif;font-size:15.5px;line-height:1.5;color:#5A544A;margin:0">Young et al.</p>
+      </a>
+    </div>
+  </section>
+
+  <section id="people" style="max-width:1180px;margin:112px auto 0;padding:0 32px">
+    <div style="display:flex;align-items:baseline;justify-content:space-between;gap:24px;border-bottom:1px solid #171512;padding-bottom:14px;flex-wrap:wrap">
+      <h2 style="font-family:Newsreader,Georgia,serif;font-weight:400;font-size:clamp(30px,3.6vw,46px);letter-spacing:-0.02em;margin:0">People</h2>
+      <span style="font-family:'Space Mono',monospace;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:#6F6858">Camera Culture · MIT Media Lab</span>
+    </div>
+    <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:32px;margin-top:32px">
+      <a href="https://web.media.mit.edu/~raskar/" style="text-decoration:none;color:#171512;flex:0 1 calc(25% - 24px);min-width:180px">
+        <div style="aspect-ratio:1/1;background:#E6E0D3;overflow:hidden;border-radius:2px">
+          <img src="https://photons.media.mit.edu/assets/img/team/team-1.png" alt="Ramesh Raskar" style="width:100%;height:100%;object-fit:cover;display:block;filter:grayscale(1) contrast(1.02)">
+        </div>
+        <h3 style="font-family:Newsreader,Georgia,serif;font-weight:500;font-size:19px;letter-spacing:-0.01em;margin:14px 0 4px">Ramesh Raskar</h3>
+        <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12.5px;line-height:1.5;color:#6C6558;margin:0">Associate Professor and Associate Director, MIT Media Lab. Director, Camera Culture.</p>
+      </a>
+      <a href="https://nikhilbehari.github.io" style="text-decoration:none;color:#171512;flex:0 1 calc(25% - 24px);min-width:180px">
+        <div style="aspect-ratio:1/1;background:#E6E0D3;overflow:hidden;border-radius:2px">
+          <img src="https://photons.media.mit.edu/assets/img/team/nikhil.jpeg" alt="Nikhil Behari" style="width:100%;height:100%;object-fit:cover;display:block;filter:grayscale(1) contrast(1.02)">
+        </div>
+        <h3 style="font-family:Newsreader,Georgia,serif;font-weight:500;font-size:19px;letter-spacing:-0.01em;margin:14px 0 4px">Nikhil Behari</h3>
+        <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12.5px;line-height:1.5;color:#6C6558;margin:0">Graduate student. NASA NSTGRO Fellow.</p>
+      </a>
+      <a href="https://aaronyoung5.github.io" style="text-decoration:none;color:#171512;flex:0 1 calc(25% - 24px);min-width:180px">
+        <div style="aspect-ratio:1/1;background:#E6E0D3;overflow:hidden;border-radius:2px">
+          <img src="https://photons.media.mit.edu/assets/img/team/aaron.jpg" alt="Aaron Young" style="width:100%;height:100%;object-fit:cover;display:block;filter:grayscale(1) contrast(1.02)">
+        </div>
+        <h3 style="font-family:Newsreader,Georgia,serif;font-weight:500;font-size:19px;letter-spacing:-0.01em;margin:14px 0 4px">Aaron Young</h3>
+        <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12.5px;line-height:1.5;color:#6C6558;margin:0">Graduate student. NSF Graduate Research Fellow.</p>
+      </a>
+      <a href="https://sidsoma.github.io" style="text-decoration:none;color:#171512;flex:0 1 calc(25% - 24px);min-width:180px">
+        <div style="aspect-ratio:1/1;background:#E6E0D3;overflow:hidden;border-radius:2px">
+          <img src="https://photons.media.mit.edu/assets/img/team/sid.jpg" alt="Siddharth Somasundaram" style="width:100%;height:100%;object-fit:cover;display:block;filter:grayscale(1) contrast(1.02)">
+        </div>
+        <h3 style="font-family:Newsreader,Georgia,serif;font-weight:500;font-size:19px;letter-spacing:-0.01em;margin:14px 0 4px">Siddharth Somasundaram</h3>
+        <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12.5px;line-height:1.5;color:#6C6558;margin:0">Graduate student. NSF Graduate Research Fellow.</p>
+      </a>
+      <a href="https://tzofi.github.io" style="text-decoration:none;color:#171512;flex:0 1 calc(25% - 24px);min-width:180px">
+        <div style="aspect-ratio:1/1;background:#E6E0D3;overflow:hidden;border-radius:2px">
+          <img src="https://photons.media.mit.edu/assets/img/team/tzofi.jpg" alt="Tzofi Klinghoffer" style="width:100%;height:100%;object-fit:cover;display:block;filter:grayscale(1) contrast(1.02)">
+        </div>
+        <h3 style="font-family:Newsreader,Georgia,serif;font-weight:500;font-size:19px;letter-spacing:-0.01em;margin:14px 0 4px">Tzofi Klinghoffer</h3>
+        <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12.5px;line-height:1.5;color:#6C6558;margin:0">Graduate student. NDSEG Fellow.</p>
+      </a>
+      <div style="flex:0 1 calc(25% - 24px);min-width:180px">
+        <div style="aspect-ratio:1/1;background:#E6E0D3;overflow:hidden;border-radius:2px">
+          <img src="assets/team/research-assistant.jpg" alt="Luke Apostolides" style="width:100%;height:100%;object-fit:cover;object-position:50% 5%;display:block;filter:grayscale(1) contrast(1.02)">
+        </div>
+        <h3 style="font-family:Newsreader,Georgia,serif;font-weight:500;font-size:19px;letter-spacing:-0.01em;margin:14px 0 4px">Luke Apostolides</h3>
+        <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12.5px;line-height:1.5;color:#6C6558;margin:0">Research Assistant.</p>
+      </div>
+    </div>
+    <p style="font-family:'Space Mono',monospace;font-size:11px;line-height:1.7;letter-spacing:0.04em;color:#6F6858;margin:26px 0 0">Alumni and collaborators — Velten, Kirmani, Satat, Redo-Sanchez, Dave, Henley, Lin, Pediredla and others — to be added.</p>
+  </section>
+
+  <section style="background:#14120E;color:#EFEAE0;margin-top:112px;padding:80px 32px">
+    <div style="max-width:1180px;margin:0 auto;display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:56px;align-items:end">
+      <div>
+        <span style="font-family:'Space Mono',monospace;font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:#D9A63C">CVPR 2027</span>
+        <h2 style="font-family:Newsreader,Georgia,serif;font-weight:400;font-size:clamp(30px,4vw,52px);line-height:1.06;letter-spacing:-0.025em;margin:18px 0 0;max-width:22ch">The All-Photon Perception Challenge</h2>
+        <p style="font-family:Newsreader,Georgia,serif;font-size:18px;line-height:1.55;color:#BEB7A6;margin:20px 0 0;max-width:52ch">A community benchmark built on consumer LiDAR — line-of-sight 3D reconstruction and non-line-of-sight perception.</p>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:14px;align-items:flex-start">
+        <a href="challenge.html" style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:14px;background:#D9A63C;color:#14120E;text-decoration:none;padding:13px 22px;border-radius:2px" class="hv12">Challenge overview →</a>
+        <span style="font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:0.1em;text-transform:uppercase;color:#8C8574">Tracks, datasets and toolkit live on the challenge site</span>
+      </div>
+    </div>
+  </section>
+
+  <section style="max-width:1180px;margin:0 auto;padding:64px 32px 96px">
+    <span style="font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:0.14em;text-transform:uppercase;color:#6F6858">Supported by</span>
+    <div style="display:flex;gap:44px;flex-wrap:wrap;align-items:center;margin-top:18px">
+      <span style="font-family:Newsreader,Georgia,serif;font-size:24px;font-weight:500;color:#4A453B">National Science Foundation</span>
+      <span style="font-family:Newsreader,Georgia,serif;font-size:24px;font-weight:500;color:#4A453B">NASA</span>
+      <span style="font-family:Newsreader,Georgia,serif;font-size:24px;font-weight:500;color:#4A453B">NDSEG</span>
+      <span style="font-family:Newsreader,Georgia,serif;font-size:24px;font-weight:500;color:#4A453B">DARPA</span>
+      <a href="sponsors.html" style="font-family:'Space Mono',monospace;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:#8A5F0B;text-decoration:none" class="hv11">Details →</a>
+    </div>
+  </section>
+
+  <dc-import name="SiteFoot"></dc-import>
+</div>
+
+<script>
+(function(){
+  var page=(location.pathname.split('/').pop()||'index.html')||'index.html';
+  [].slice.call(document.querySelectorAll('nav a[data-nav]')).forEach(function(a){
+    if(a.getAttribute('href')===page&&a.getAttribute('data-nav')!=='Challenge'){
+      a.style.color='#171512';a.style.borderBottom='1px solid #8A5F0B';
+    }
+  });
+})();
+</script>
+</body>
+</html>

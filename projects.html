@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Projects · Single Photons</title>
+<meta name="description" content="Single-photon, transient and time-of-flight imaging research from the Camera Culture group at the MIT Media Lab, 2008 to today.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..500&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#F5F2EB;color:#171512;-webkit-font-smoothing:antialiased}
+a{color:#8A5F0B}
+a:hover{color:#171512}
+input::placeholder{color:#A39B8A}
+.prow:hover{background:#EFEBE1}
+@keyframes photonRise{from{transform:scaleY(0.04);opacity:.25}to{transform:scaleY(1);opacity:1}}
+@keyframes photonSweep{0%{left:-6%}100%{left:104%}}
+.hv1:hover{color:#171512 !important;border-bottom:1px solid #8A5F0B !important}
+.hv2:hover{background:#8A5F0B !important;color:#FBF9F4 !important;border:1px solid #8A5F0B !important}
+.hv3:hover{color:#D9A63C !important}
+.hv4:hover{color:#EFEAE0 !important}
+.hv5:hover{border:1px solid #171512 !important;background:#171512 !important;color:#F5F2EB !important}
+.hv6:hover{background:#8A5F0B !important}
+.hv7:hover{border:1px solid #171512 !important}
+.hv8:hover{background:#EFEBE1 !important}
+.hv9:hover{background:#E9E3D6 !important}
+.hv10:hover{color:#8A5F0B !important}
+.hv11:hover{color:#171512 !important}
+.hv12:hover{background:#EFEAE0 !important}
+</style>
+</head>
+<body>
+<div style="background:#F5F2EB">
+  <dc-import name="SiteNav"></dc-import>
+
+  <section style="max-width:1180px;margin:0 auto;padding:88px 32px 0">
+    <span style="font-family:'Space Mono',monospace;font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:#6F6858">Research threads</span>
+    <h1 style="font-family:Newsreader,Georgia,serif;font-weight:400;font-size:clamp(38px,5.2vw,68px);line-height:1.04;letter-spacing:-0.025em;margin:20px 0 0">Projects</h1>
+    <p style="font-family:Newsreader,Georgia,serif;font-size:19px;line-height:1.55;color:#3E3931;margin:22px 0 0;max-width:64ch;text-wrap:pretty">Six lines of inquiry, each spanning several papers. For the complete publication record, see <a href="papers.html" style="color:#8A5F0B">Papers</a>.</p>
+  </section>
+
+  <section style="max-width:1180px;margin:72px auto 0;padding:0 32px;display:flex;flex-direction:column;gap:0">
+
+    <div style="display:grid;grid-template-columns:minmax(0,420px) minmax(0,1fr);gap:48px;padding:44px 0;border-top:1px solid #171512;align-items:start">
+      <div style="aspect-ratio:16/10;background:#E6E0D3;border:1px solid #E2DBCC;overflow:hidden">
+        <img src="https://photons.media.mit.edu/assets/img/projects/nlos_track.gif" alt="Tracking a hidden object around a corner" style="width:100%;height:100%;object-fit:cover;display:block">
+      </div>
+      <div>
+        <div style="display:flex;gap:20px;flex-wrap:wrap;font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:0.12em;text-transform:uppercase;color:#6F6858">
+          <span style="color:#8A5F0B">01</span><span>2009 → 2026</span><span>8 papers</span>
+        </div>
+        <h2 style="font-family:Newsreader,Georgia,serif;font-weight:400;font-size:clamp(26px,3vw,36px);line-height:1.12;letter-spacing:-0.02em;margin:14px 0 12px">Seeing around corners</h2>
+        <p style="font-family:Newsreader,Georgia,serif;font-size:17.5px;line-height:1.55;color:#4A453B;margin:0 0 20px;max-width:64ch;text-wrap:pretty">The founding question of the group's imaging work: can light that has bounced off a wall be used to reconstruct what is hidden behind it? The line runs from a laboratory streak camera and femtosecond laser to a fifty-dollar LiDAR module, and from reconstructing a single hidden shape to inferring what a hidden object is.</p>
+        <div style="display:flex;flex-direction:column;gap:9px">
+          <a href="papers.html?topic=nlos" style="font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:0.08em;text-transform:uppercase;color:#8A5F0B;text-decoration:none">All non-line-of-sight papers →</a>
+          <span style="font-family:Newsreader,Georgia,serif;font-size:15.5px;line-height:1.7;color:#6C6558">Kirmani 2009 · Velten 2012 · Maeda 2019 · Somasundaram 2023 · PlatoNeRF 2024 · Young 2025 · Nature 2026 · DENALI 2026</span>
+        </div>
+      </div>
+    </div>
+
+    <div style="display:grid;grid-template-columns:minmax(0,420px) minmax(0,1fr);gap:48px;padding:44px 0;border-top:1px solid #E2DBCC;align-items:start">
+      <div style="aspect-ratio:16/10;background:#E6E0D3;border:1px solid #E2DBCC;display:flex;align-items:center;justify-content:center;padding:22px">
+        <span style="font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:0.1em;text-transform:uppercase;color:#5A544A;text-align:center;line-height:1.7">Image needed<br>femto-photography frame</span>
+      </div>
+      <div>
+        <div style="display:flex;gap:20px;flex-wrap:wrap;font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:0.12em;text-transform:uppercase;color:#6F6858">
+          <span style="color:#8A5F0B">02</span><span>2008 → 2018</span><span>5 papers</span>
+        </div>
+        <h2 style="font-family:Newsreader,Georgia,serif;font-weight:400;font-size:clamp(26px,3vw,36px);line-height:1.12;letter-spacing:-0.02em;margin:14px 0 12px">Light in flight</h2>
+        <p style="font-family:Newsreader,Georgia,serif;font-size:17.5px;line-height:1.55;color:#4A453B;margin:0 0 20px;max-width:64ch;text-wrap:pretty">Treating the travel time of light as the measurement rather than its intensity. The thread begins with a theoretical account of the time-light transport matrix and produces femto-photography, which captured light propagating through a scene at an effective trillion frames per second.</p>
+        <div style="display:flex;flex-direction:column;gap:9px">
+          <a href="papers.html?topic=transient" style="font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:0.08em;text-transform:uppercase;color:#8A5F0B;text-decoration:none">All light-in-flight papers →</a>
+          <span style="font-family:Newsreader,Georgia,serif;font-size:15.5px;line-height:1.7;color:#6C6558">Raskar &amp; Davis 2008 · Naik 2011 · Femto-photography 2013 · Naik 2014 · Heshmat 2018</span>
+        </div>
+      </div>
+    </div>
+
+    <div style="display:grid;grid-template-columns:minmax(0,420px) minmax(0,1fr);gap:48px;padding:44px 0;border-top:1px solid #E2DBCC;align-items:start">
+      <div style="aspect-ratio:16/10;background:#E6E0D3;border:1px solid #E2DBCC;overflow:hidden">
+        <img src="https://photons.media.mit.edu/assets/img/projects/bls3d.gif" alt="Handheld 3D scanning with diffuse LiDAR" style="width:100%;height:100%;object-fit:cover;display:block">
+      </div>
+      <div>
+        <div style="display:flex;gap:20px;flex-wrap:wrap;font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:0.12em;text-transform:uppercase;color:#6F6858">
+          <span style="color:#8A5F0B">03</span><span>2022 → 2025</span><span>4 papers</span>
+        </div>
+        <h2 style="font-family:Newsreader,Georgia,serif;font-weight:400;font-size:clamp(26px,3vw,36px);line-height:1.12;letter-spacing:-0.02em;margin:14px 0 12px">3D from commodity sensors</h2>
+        <p style="font-family:Newsreader,Georgia,serif;font-size:17.5px;line-height:1.55;color:#4A453B;margin:0 0 20px;max-width:64ch;text-wrap:pretty">Phones and robots already ship time-of-flight modules, but they report one depth value per pixel and fail on mirrors, glass and dark surfaces. This thread recovers full geometry from those sensors by using the parts of the signal the manufacturer discards.</p>
+        <div style="display:flex;flex-direction:column;gap:9px">
+          <a href="papers.html?topic=3d" style="font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:0.08em;text-transform:uppercase;color:#8A5F0B;text-decoration:none">All 3D reconstruction papers →</a>
+          <span style="font-family:Newsreader,Georgia,serif;font-size:15.5px;line-height:1.7;color:#6C6558">Bounce-flash LiDAR 2022 · PlatoNeRF 2024 · Specular mapping 2024 · Blurred LiDAR 2025</span>
+        </div>
+      </div>
+    </div>
+
+    <div style="display:grid;grid-template-columns:minmax(0,420px) minmax(0,1fr);gap:48px;padding:44px 0;border-top:1px solid #E2DBCC;align-items:start">
+      <div style="aspect-ratio:16/10;background:#E6E0D3;border:1px solid #E2DBCC;overflow:hidden">
+        <img src="https://photons.media.mit.edu/assets/img/projects/snowpack.png" alt="Time-domain diffuse optics measurement of snowpack" style="width:100%;height:100%;object-fit:cover;display:block">
+      </div>
+      <div>
+        <div style="display:flex;gap:20px;flex-wrap:wrap;font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:0.12em;text-transform:uppercase;color:#6F6858">
+          <span style="color:#8A5F0B">04</span><span>2014 → 2025</span><span>7 papers</span>
+        </div>
+        <h2 style="font-family:Newsreader,Georgia,serif;font-weight:400;font-size:clamp(26px,3vw,36px);line-height:1.12;letter-spacing:-0.02em;margin:14px 0 12px">Imaging through scattering media</h2>
+        <p style="font-family:Newsreader,Georgia,serif;font-size:17.5px;line-height:1.55;color:#4A453B;margin:0 0 20px;max-width:64ch;text-wrap:pretty">Fog, tissue, turbid layers and snowpack all scramble light, but they scramble it in time as well as space. Separating photons by the path they took recovers what lies behind — fluorescent markers under skin, a road in fog, the pages of a closed book, the grain size of a snowpack in the field.</p>
+        <div style="display:flex;flex-direction:column;gap:9px">
+          <a href="papers.html?topic=scattering" style="font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:0.08em;text-transform:uppercase;color:#8A5F0B;text-decoration:none">All scattering papers →</a>
+          <span style="font-family:Newsreader,Georgia,serif;font-size:15.5px;line-height:1.7;color:#6C6558">Raviv 2014 · Satat 2015 · All-photons imaging 2016 · Terahertz 2016 · Satat 2017 · Fog 2018 · Snowpack 2025</span>
+        </div>
+      </div>
+    </div>
+
+    <div style="display:grid;grid-template-columns:minmax(0,420px) minmax(0,1fr);gap:48px;padding:44px 0;border-top:1px solid #E2DBCC;align-items:start">
+      <div style="aspect-ratio:16/10;background:#E6E0D3;border:1px solid #E2DBCC;overflow:hidden">
+        <img src="https://photons.media.mit.edu/assets/img/projects/bounceflash.gif" alt="Bounce-flash LiDAR capture" style="width:100%;height:100%;object-fit:cover;display:block">
+      </div>
+      <div>
+        <div style="display:flex;gap:20px;flex-wrap:wrap;font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:0.12em;text-transform:uppercase;color:#6F6858">
+          <span style="color:#8A5F0B">05</span><span>2013 → 2018</span><span>6 papers</span>
+        </div>
+        <h2 style="font-family:Newsreader,Georgia,serif;font-weight:400;font-size:clamp(26px,3vw,36px);line-height:1.12;letter-spacing:-0.02em;margin:14px 0 12px">Time-of-flight physics</h2>
+        <p style="font-family:Newsreader,Georgia,serif;font-size:17.5px;line-height:1.55;color:#4A453B;margin:0 0 20px;max-width:64ch;text-wrap:pretty">Multipath interference is the systematic error that makes cheap depth sensors lie. This thread models it, codes around it, and in the process turns a consumer range camera into an instrument that recovers per-pixel time profiles rather than a single distance.</p>
+        <div style="display:flex;flex-direction:column;gap:9px">
+          <a href="papers.html?topic=tof" style="font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:0.08em;text-transform:uppercase;color:#8A5F0B;text-decoration:none">All ToF physics papers →</a>
+          <span style="font-family:Newsreader,Georgia,serif;font-size:15.5px;line-height:1.7;color:#6C6558">Coded ToF 2013 · Bhandari 2014 · Kadambi 2014 · Naik 2015 · Polarized 3D 2015 · Kadambi 2017</span>
+        </div>
+      </div>
+    </div>
+
+    <div style="display:grid;grid-template-columns:minmax(0,420px) minmax(0,1fr);gap:48px;padding:44px 0;border-top:1px solid #E2DBCC;border-bottom:1px solid #E2DBCC;align-items:start">
+      <div style="aspect-ratio:16/10;background:#E6E0D3;border:1px solid #E2DBCC;display:flex;align-items:center;justify-content:center;padding:22px">
+        <span style="font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:0.1em;text-transform:uppercase;color:#5A544A;text-align:center;line-height:1.7">Image needed<br>DISeR or quanta figure</span>
+      </div>
+      <div>
+        <div style="display:flex;gap:20px;flex-wrap:wrap;font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:0.12em;text-transform:uppercase;color:#6F6858">
+          <span style="color:#8A5F0B">06</span><span>2023 → 2026</span><span>5 papers</span>
+        </div>
+        <h2 style="font-family:Newsreader,Georgia,serif;font-weight:400;font-size:clamp(26px,3vw,36px);line-height:1.12;letter-spacing:-0.02em;margin:14px 0 12px">Designing the sensor for the task</h2>
+        <p style="font-family:Newsreader,Georgia,serif;font-size:17.5px;line-height:1.55;color:#4A453B;margin:0 0 20px;max-width:64ch;text-wrap:pretty">If the algorithm is learned end to end, the camera should be too. This thread treats optics, illumination and photon budget as parameters to optimise for a downstream task, and asks what neural networks look like when they operate on individual photon counts rather than images.</p>
+        <div style="display:flex;flex-direction:column;gap:9px">
+          <a href="papers.html?topic=systems" style="font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:0.08em;text-transform:uppercase;color:#8A5F0B;text-decoration:none">All sensor design papers →</a>
+          <span style="font-family:Newsreader,Georgia,serif;font-size:15.5px;line-height:1.7;color:#6C6558">Physics vs. Learned Priors 2023 · DISeR 2023 · Event cameras + SPADs 2025 · Quanta neural networks 2025 · Task-driven LiDAR design 2026</span>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section style="max-width:1180px;margin:56px auto 0;padding:0 32px">
+    <div style="border:1px solid #E2DBCC;background:#EFEBE1;padding:22px 24px">
+      <span style="font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:0.12em;text-transform:uppercase;color:#8A5F0B">To add</span>
+      <ul style="font-family:Newsreader,Georgia,serif;font-size:16px;line-height:1.6;color:#4A453B;margin:12px 0 0;padding-left:18px;max-width:78ch;display:flex;flex-direction:column;gap:5px">
+        <li>Confirmation that these six threads are the right division of the work</li>
+        <li>A representative image for threads 02 and 06</li>
+        <li>Higher-resolution images — most of the hotlinked GIFs are only 240×240 and upscale badly</li>
+        <li>Local copies of the images currently hotlinked from photons.media.mit.edu</li>
+        <li>Any thread that is missing — the pre-2009 and health-imaging lines are not represented</li>
+      </ul>
+    </div>
+  </section>
+
+  <div style="height:104px"></div>
+  <dc-import name="SiteFoot"></dc-import>
+</div>
+
+<script>
+(function(){
+  var page=(location.pathname.split('/').pop()||'index.html')||'index.html';
+  [].slice.call(document.querySelectorAll('nav a[data-nav]')).forEach(function(a){
+    if(a.getAttribute('href')===page&&a.getAttribute('data-nav')!=='Challenge'){
+      a.style.color='#171512';a.style.borderBottom='1px solid #8A5F0B';
+    }
+  });
+})();
+</script>
+</body>
+</html>
