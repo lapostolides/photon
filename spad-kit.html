@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SPAD Kit · Single Photons</title>
+<meta name="description" content="Single-photon, transient and time-of-flight imaging research from the Camera Culture group at the MIT Media Lab, 2008 to today.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..500&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#F5F2EB;color:#171512;-webkit-font-smoothing:antialiased}
+a{color:#8A5F0B}
+a:hover{color:#171512}
+input::placeholder{color:#A39B8A}
+.prow:hover{background:#EFEBE1}
+.hv1:hover{color:#171512 !important;border-bottom:1px solid #8A5F0B !important}
+.hv2:hover{background:#8A5F0B !important;color:#FBF9F4 !important;border:1px solid #8A5F0B !important}
+.hv3:hover{color:#D9A63C !important}
+.hv4:hover{color:#EFEAE0 !important}
+.hv5:hover{background:#F4EFE5 !important;color:#14120E !important;border:1px solid #F4EFE5 !important}
+.hv6:hover{background:#F4EFE5 !important}
+.hv7:hover{border:1px solid #F4EFE5 !important}
+.hv8:hover{background:#EFEBE1 !important}
+.hv9:hover{background:#E9E3D6 !important}
+.hv10:hover{color:#8A5F0B !important}
+.hv11:hover{color:#171512 !important}
+.hv12:hover{background:#EFEAE0 !important}
+.hv13:hover{background:#8A5F0B !important}
+.hv14:hover{border:1px solid #171512 !important}
+</style>
+<script src="reveal.js" defer></script>
+
+</head>
+<body>
+<div style="background:#F5F2EB">
+  <div style="position:sticky;top:0;z-index:50;background:rgba(245,242,235,0.92);backdrop-filter:blur(10px);border-bottom:1px solid #E2DBCC">
+  <div style="max-width:1180px;margin:0 auto;padding:0 32px;display:flex;align-items:center;gap:32px;min-height:60px;flex-wrap:wrap">
+    <a href="index.html" style="display:flex;align-items:baseline;gap:9px;text-decoration:none;color:#171512;flex:0 0 auto">
+      <span style="font-family:Newsreader,Georgia,serif;font-size:19px;font-weight:500;letter-spacing:-0.01em;white-space:nowrap">Single Photons</span>
+      <span style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:#6F6858">MIT</span>
+    </a>
+    <nav style="display:flex;align-items:center;gap:17px;margin-left:auto;flex-wrap:wrap;row-gap:8px">
+      <a data-nav="Projects" href="projects.html" style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13px;letter-spacing:0.01em;color:#4A453B;text-decoration:none;padding:4px 0;border-bottom:1px solid transparent;white-space:nowrap" class="hv1">Projects</a>
+      <a data-nav="Papers" href="papers.html" style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13px;color:#4A453B;text-decoration:none;padding:4px 0;border-bottom:1px solid transparent;white-space:nowrap" class="hv1">Papers</a>
+      <a data-nav="SPAD Kit" href="spad-kit.html" style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13px;color:#4A453B;text-decoration:none;padding:4px 0;border-bottom:1px solid transparent;white-space:nowrap" class="hv1">SPAD Kit</a>
+      <a data-nav="Resources" href="resources.html" style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13px;color:#4A453B;text-decoration:none;padding:4px 0;border-bottom:1px solid transparent;white-space:nowrap" class="hv1">Resources</a>
+      <a data-nav="Media" href="media.html" style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13px;color:#4A453B;text-decoration:none;padding:4px 0;border-bottom:1px solid transparent;white-space:nowrap" class="hv1">Media</a>
+      <a data-nav="Events" href="events.html" style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13px;color:#4A453B;text-decoration:none;padding:4px 0;border-bottom:1px solid transparent;white-space:nowrap" class="hv1">Events</a>
+      <a data-nav="Sponsors" href="sponsors.html" style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13px;color:#4A453B;text-decoration:none;padding:4px 0;border-bottom:1px solid transparent;white-space:nowrap" class="hv1">Sponsors</a>
+      <a data-nav="Challenge" href="challenge.html" style="font-family:'Space Mono',monospace;font-size:11px;letter-spacing:0.08em;text-transform:uppercase;color:#8A5F0B;text-decoration:none;border:1px solid #DCCBA6;padding:6px 11px;border-radius:2px;white-space:nowrap" class="hv2">CVPR Challenge</a>
+    </nav>
+  </div>
+</div>
+
+  <section style="max-width:1180px;margin:0 auto;padding:88px 32px 0">
+    <h1 style="font-family:Newsreader,Georgia,serif;font-weight:400;font-size:clamp(38px,5.2vw,68px);line-height:1.04;letter-spacing:-0.025em;margin:0">SPAD Kit</h1>
+    <p style="font-family:Newsreader,Georgia,serif;font-size:19px;line-height:1.55;color:#3E3931;margin:22px 0 0;max-width:62ch;text-wrap:pretty">Capture dToF data yourself.</p>
+    <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:28px">
+      <a href="assets/spad-kit-startup-guide.pdf" style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13.5px;background:#171512;color:#F5F2EB;text-decoration:none;padding:11px 18px;border-radius:2px" class="hv13">Startup Booklet</a>
+      <a href="https://github.com/NikhilBehari/spad_capture/blob/main/docs/docs.md" style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13.5px;color:#171512;text-decoration:none;padding:11px 18px;border:1px solid #D6CEBC;border-radius:2px" class="hv14">Documentation</a>
+      <a href="https://github.com/NikhilBehari/spad_capture" style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13.5px;color:#171512;text-decoration:none;padding:11px 18px;border:1px solid #D6CEBC;border-radius:2px" class="hv14">Repository</a>
+    </div>
+  </section>
+
+  <section style="max-width:1180px;margin:88px auto 0;padding:0 32px">
+    <div style="display:flex;align-items:baseline;justify-content:space-between;gap:24px;border-bottom:1px solid #171512;padding-bottom:14px;flex-wrap:wrap">
+      <h2 style="font-family:Newsreader,Georgia,serif;font-weight:400;font-size:clamp(28px,3.4vw,42px);letter-spacing:-0.02em;margin:0">Sensors</h2>
+      <span style="font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:0.12em;text-transform:uppercase;color:#6F6858">More modules coming soon</span>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:32px;margin-top:32px">
+      <div style="border:1px solid #E2DBCC;background:#EFEBE1;padding:26px 28px">
+        <h3 style="font-family:'Space Mono',monospace;font-size:15px;letter-spacing:0.02em;margin:0 0 0">ams TMF8828</h3>
+        <div style="margin-top:16px;aspect-ratio:4/3;background:#FBFAF7;border:1px solid #E2DBCC;display:flex;align-items:center;justify-content:center;padding:14px;overflow:hidden">
+          <img src="assets/hardware/tmf8828-shield.jpg" alt="ams TMF8828 EVM-EB shield, an Arduino-format evaluation board carrying the TMF8828 sensor" style="max-width:100%;max-height:100%;object-fit:contain;display:block">
+        </div>
+        <a href="https://ams-osram.com/products/boards-kits-accessories/kits/ams-tmf8828-evm-eb-shield-evaluation-kit" style="display:flex;justify-content:space-between;gap:16px;align-items:baseline;margin-top:18px;padding-top:14px;border-top:1px solid #D6CEBC;text-decoration:none;color:#171512" class="hv10">
+          <span style="font-family:Newsreader,Georgia,serif;font-size:16.5px">TMF8828 EVM-EB shield</span>
+          <span style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:0.08em;text-transform:uppercase;color:#8A5F0B">ams-osram →</span>
+        </a>
+        <a href="https://store.arduino.cc/products/arduino-uno-rev3" style="display:flex;justify-content:space-between;gap:16px;align-items:baseline;margin-top:10px;padding-top:10px;text-decoration:none;color:#171512" class="hv10">
+          <span style="font-family:Newsreader,Georgia,serif;font-size:16.5px">Arduino Uno &mdash; required host</span>
+          <span style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:0.08em;text-transform:uppercase;color:#8A5F0B">arduino.cc →</span>
+        </a>
+      </div>
+
+      <div style="border:1px solid #E2DBCC;background:#EFEBE1;padding:26px 28px">
+        <h3 style="font-family:'Space Mono',monospace;font-size:15px;letter-spacing:0.02em;margin:0 0 0">ST VL53L8CH</h3>
+        <div style="margin-top:16px;aspect-ratio:4/3;background:#FBFAF7;border:1px solid #E2DBCC;display:flex;align-items:center;justify-content:center;padding:14px;overflow:hidden">
+          <img src="assets/hardware/vl53l8ch-nucleo.jpg" alt="ST P-NUCLEO-53L8A1: X-NUCLEO-53L8A1 expansion board with the VL53L8 sensor, stacked on a NUCLEO development board" style="max-width:100%;max-height:100%;object-fit:contain;display:block">
+        </div>
+        <a href="https://www.st.com/en/evaluation-tools/p-nucleo-53l8a1.html" style="display:flex;justify-content:space-between;gap:16px;align-items:baseline;margin-top:18px;padding-top:14px;border-top:1px solid #D6CEBC;text-decoration:none;color:#171512" class="hv10">
+          <span style="font-family:Newsreader,Georgia,serif;font-size:16.5px">P-NUCLEO-53L8A1 kit</span>
+          <span style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:0.08em;text-transform:uppercase;color:#8A5F0B">st.com →</span>
+        </a>
+            </div>
+
+      <div style="border:1px solid #E2DBCC;background:#EFEBE1;padding:26px 28px">
+        <h3 style="font-family:'Space Mono',monospace;font-size:15px;letter-spacing:0.02em;margin:0 0 0">Intel RealSense D435i</h3>
+        <div style="margin-top:16px;aspect-ratio:4/3;background:#FBFAF7;border:1px solid #E2DBCC;display:flex;align-items:center;justify-content:center;padding:14px;overflow:hidden">
+          <img src="assets/hardware/realsense-d435i.jpg" alt="Intel RealSense D435i depth camera, front view showing the stereo pair, RGB lens and infrared projector" style="max-width:100%;max-height:100%;object-fit:contain;display:block">
+        </div>
+        <a href="https://www.realsenseai.com/products/stereo-depth-camera-d435/" style="display:flex;justify-content:space-between;gap:16px;align-items:baseline;margin-top:18px;padding-top:14px;border-top:1px solid #D6CEBC;text-decoration:none;color:#171512" class="hv10">
+          <span style="font-family:Newsreader,Georgia,serif;font-size:16.5px">D435</span>
+          <span style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:0.08em;text-transform:uppercase;color:#8A5F0B">realsenseai →</span>
+        </a>
+        <span style="display:block;margin-top:12px;font-family:'Space Mono',monospace;font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:#6F6858">Optional ground truth camera</span>
+      </div>
+    </div>
+
+  </section>
+
+  <section style="max-width:1180px;margin:88px auto 0;padding:0 32px">
+    <div style="display:flex;align-items:baseline;justify-content:space-between;gap:24px;border-bottom:1px solid #171512;padding-bottom:14px;flex-wrap:wrap">
+      <h2 style="font-family:Newsreader,Georgia,serif;font-weight:400;font-size:clamp(28px,3.4vw,42px);letter-spacing:-0.02em;margin:0">Mounts</h2>
+      <span style="font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:0.12em;text-transform:uppercase;color:#6F6858">Printable STL</span>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px;margin-top:32px">
+      <div style="border:1px solid #E2DBCC;background:#EFEBE1;padding:26px 28px">
+        <h3 style="font-family:'Space Mono',monospace;font-size:15px;letter-spacing:0.02em;margin:0 0 0">ams TMF8828</h3>
+        <div style="margin-top:16px;aspect-ratio:4/3;background:#3B3B3B;border:1px solid #E2DBCC;overflow:hidden">
+          <img src="assets/hardware/tmf8828-mount-v2-crop.png" alt="ams TMF8828 mount, top view showing the board enclosure, standoffs and mounting plate" style="width:100%;height:100%;object-fit:cover;display:block">
+        </div>
+        <a download="ams-tmf8828-mount.stl" href="assets/hardware/tmf8828-mount-v2.stl" style="display:flex;justify-content:space-between;gap:16px;align-items:baseline;margin-top:18px;padding-top:14px;border-top:1px solid #D6CEBC;text-decoration:none;color:#171512" style-hover="color:#8A5F0B">
+          <span style="font-family:Newsreader,Georgia,serif;font-size:16.5px">Mount &mdash; STL</span>
+          <span style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:0.08em;text-transform:uppercase;color:#8A5F0B">download &darr;</span>
+        </a>
+        <a download="ams-tmf8828-mount.step" href="assets/hardware/tmf8828-mount-v2.step" style="display:flex;justify-content:space-between;gap:16px;align-items:baseline;margin-top:0;padding-top:14px;border-top:1px solid #D6CEBC;text-decoration:none;color:#171512" style-hover="color:#8A5F0B">
+          <span style="font-family:Newsreader,Georgia,serif;font-size:16.5px">Mount &mdash; STEP</span>
+          <span style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:0.08em;text-transform:uppercase;color:#8A5F0B">download &darr;</span>
+        </a>
+      
+      </div>
+      <div style="border:1px solid #E2DBCC;background:#EFEBE1;padding:26px 28px">
+        <h3 style="font-family:'Space Mono',monospace;font-size:15px;letter-spacing:0.02em;margin:0 0 0">ST VL53L8CH</h3>
+        <div style="margin-top:16px;aspect-ratio:4/3;background:#3B3B3B;border:1px solid #E2DBCC;overflow:hidden">
+          <img src="assets/hardware/st-mount-v2-crop.png" alt="ST VL53L8CH mount, top view showing the board enclosure, standoffs and mounting plate" style="width:100%;height:100%;object-fit:cover;display:block">
+        </div>
+        <a download="st-vl53l8ch-mount.stl" href="assets/hardware/st-vl53l8ch-mount-v2.stl" style="display:flex;justify-content:space-between;gap:16px;align-items:baseline;margin-top:18px;padding-top:14px;border-top:1px solid #D6CEBC;text-decoration:none;color:#171512" style-hover="color:#8A5F0B">
+          <span style="font-family:Newsreader,Georgia,serif;font-size:16.5px">Mount &mdash; STL</span>
+          <span style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:0.08em;text-transform:uppercase;color:#8A5F0B">download &darr;</span>
+        </a>
+        <a download="st-vl53l8ch-mount.step" href="assets/hardware/st-vl53l8ch-mount-v2.step" style="display:flex;justify-content:space-between;gap:16px;align-items:baseline;margin-top:0;padding-top:14px;border-top:1px solid #D6CEBC;text-decoration:none;color:#171512" style-hover="color:#8A5F0B">
+          <span style="font-family:Newsreader,Georgia,serif;font-size:16.5px">Mount &mdash; STEP</span>
+          <span style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:0.08em;text-transform:uppercase;color:#8A5F0B">download &darr;</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section style="max-width:1180px;margin:88px auto 0;padding:0 32px">
+    <div style="display:flex;align-items:baseline;justify-content:space-between;gap:24px;border-bottom:1px solid #171512;padding-bottom:14px;flex-wrap:wrap">
+      <h2 style="font-family:Newsreader,Georgia,serif;font-weight:400;font-size:clamp(28px,3.4vw,42px);letter-spacing:-0.02em;margin:0">Software</h2>
+      <a href="https://github.com/NikhilBehari/spad_capture" style="font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:0.12em;text-transform:uppercase;color:#8A5F0B;text-decoration:none">spad_capture →</a>
+    </div>
+    <p style="font-family:Newsreader,Georgia,serif;font-size:18px;line-height:1.55;color:#3E3931;margin:24px 0 0;max-width:68ch;text-wrap:pretty">One Python package captures per-zone histograms from both sensors, with a live web dashboard, optional RealSense capture and a single storage format per run.</p>
+    <div style="margin-top:28px;border-top:1px solid #171512">
+      <div style="display:grid;grid-template-columns:110px 150px minmax(0,1fr);gap:16px;padding:12px 0;border-bottom:1px solid #E2DBCC;align-items:baseline"><span style="font-family:'Space Mono',monospace;font-size:12px;color:#8A5F0B">spad st</span><span style="font-family:'Space Mono',monospace;font-size:12px;color:#171512">ST VL53L8CH</span><span style="font-family:Newsreader,Georgia,serif;font-size:15.5px;line-height:1.45;color:#4A453B">Per-zone histograms over a configurable distance window, on a 4×4 or 8×8 grid.</span></div>
+      <div style="display:grid;grid-template-columns:110px 150px minmax(0,1fr);gap:16px;padding:12px 0;border-bottom:1px solid #E2DBCC;align-items:baseline"><span style="font-family:'Space Mono',monospace;font-size:12px;color:#8A5F0B">spad tmf</span><span style="font-family:'Space Mono',monospace;font-size:12px;color:#171512">ams TMF8828</span><span style="font-family:Newsreader,Georgia,serif;font-size:15.5px;line-height:1.45;color:#4A453B">Per-zone time-of-flight counts from predefined or user-defined SPAD masks.</span></div>
+    </div>
+    
+    <div style="display:grid;grid-template-columns:minmax(0,260px) minmax(0,1fr);gap:40px;padding:30px 0;border-bottom:1px solid #E2DBCC">
+      <div>
+        <span style="font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:0.12em;color:#8A5F0B">01</span>
+        <h3 style="font-family:Newsreader,Georgia,serif;font-weight:500;font-size:22px;letter-spacing:-0.01em;margin:6px 0 0">Install</h3>
+      </div>
+      <div style="min-width:0"><p style="font-family:Newsreader,Georgia,serif;font-size:16.5px;line-height:1.55;color:#4A453B;margin:0 0 4px;max-width:64ch">Create the environment, install the package, then flash the development board. Flashing installs arduino-cli and the board core if they are missing.</p><div style="background:#14120E;padding:16px 20px;border-radius:2px;overflow-x:auto;margin-top:12px"><code style="font-family:'Space Mono',monospace;font-size:11.5px;line-height:1.9;color:#EDE7DA;white-space:pre">git clone https://github.com/NikhilBehari/spad_capture.git
+cd spad_capture
+conda env create -f environment.yml
+conda activate spad_capture
+pip install -e .
+
+spad st  flash      # NUCLEO-F401RE + X-NUCLEO-53L8A1
+spad tmf flash      # Arduino + TMF8828</code></div></div>
+    </div>
+    
+    <div style="display:grid;grid-template-columns:minmax(0,260px) minmax(0,1fr);gap:40px;padding:30px 0;border-bottom:1px solid #E2DBCC">
+      <div>
+        <span style="font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:0.12em;color:#8A5F0B">02</span>
+        <h3 style="font-family:Newsreader,Georgia,serif;font-weight:500;font-size:22px;letter-spacing:-0.01em;margin:6px 0 0">Capture</h3>
+      </div>
+      <div style="min-width:0"><p style="font-family:Newsreader,Georgia,serif;font-size:16.5px;line-height:1.55;color:#4A453B;margin:0 0 4px;max-width:64ch">Defaults: 4×4 zones, 0–2 m, 10 frames for the ST; 3×3 wide, long range, 10 frames for the TMF. Flags override any config passed with <code style="font-family:'Space Mono',monospace;font-size:13px">-c</code>.</p><div style="background:#14120E;padding:16px 20px;border-radius:2px;overflow-x:auto;margin-top:12px"><code style="font-family:'Space Mono',monospace;font-size:11.5px;line-height:1.9;color:#EDE7DA;white-space:pre">spad st capture
+spad st capture --start-mm 200 --end-mm 1200 --freq 15
+spad st capture -c configs/st/8x8.yaml
+
+spad tmf capture --zone 4x4_wide --range short -n 20</code></div></div>
+    </div>
+    
+    <div style="display:grid;grid-template-columns:minmax(0,260px) minmax(0,1fr);gap:40px;padding:30px 0;border-bottom:1px solid #E2DBCC">
+      <div>
+        <span style="font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:0.12em;color:#8A5F0B">03</span>
+        <h3 style="font-family:Newsreader,Georgia,serif;font-weight:500;font-size:22px;letter-spacing:-0.01em;margin:6px 0 0">Live dashboard</h3>
+      </div>
+      <div style="min-width:0"><p style="font-family:Newsreader,Georgia,serif;font-size:16.5px;line-height:1.55;color:#4A453B;margin:0 0 4px;max-width:64ch">Add <code style="font-family:'Space Mono',monospace;font-size:13px">--viz</code> to any capture to watch histograms stream in at <code style="font-family:'Space Mono',monospace;font-size:13px">http://127.0.0.1:8888</code>. Saved runs replay through the same dashboard.</p><div style="background:#14120E;padding:16px 20px;border-radius:2px;overflow-x:auto;margin-top:12px"><code style="font-family:'Space Mono',monospace;font-size:11.5px;line-height:1.9;color:#EDE7DA;white-space:pre">spad st capture --viz
+spad st viz --source outputs/&lt;run&gt;/data.npz</code></div></div>
+    </div>
+    
+    <div style="display:grid;grid-template-columns:minmax(0,260px) minmax(0,1fr);gap:40px;padding:30px 0;border-bottom:1px solid #E2DBCC">
+      <div>
+        <span style="font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:0.12em;color:#8A5F0B">04</span>
+        <h3 style="font-family:Newsreader,Georgia,serif;font-weight:500;font-size:22px;letter-spacing:-0.01em;margin:6px 0 0">Selecting zones</h3>
+      </div>
+      <div style="min-width:0"><p style="font-family:Newsreader,Georgia,serif;font-size:16.5px;line-height:1.55;color:#4A453B;margin:0 0 4px;max-width:64ch">The ST takes a rectangle on its fixed grid: <code style="font-family:'Space Mono',monospace;font-size:13px">--zone ROW,COL</code> for one zone or <code style="font-family:'Space Mono',monospace;font-size:13px">--roi</code> for a block. Fewer zones free on-device memory for more bins over a longer window. The TMF takes a per-pixel mask authored in YAML, so zones can be any shape.</p><div style="background:#14120E;padding:16px 20px;border-radius:2px;overflow-x:auto;margin-top:12px"><code style="font-family:'Space Mono',monospace;font-size:11.5px;line-height:1.9;color:#EDE7DA;white-space:pre">spad st capture --zone 2,2 --end-mm 4000
+spad st info -c configs/st/8x8.yaml     # bins and budget before capturing
+spad tmf capture --mask configs/tmf/masks/four_center_quads.yaml</code></div></div>
+    </div>
+    
+    <div style="display:grid;grid-template-columns:minmax(0,260px) minmax(0,1fr);gap:40px;padding:30px 0;border-bottom:1px solid #E2DBCC">
+      <div>
+        <span style="font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:0.12em;color:#8A5F0B">05</span>
+        <h3 style="font-family:Newsreader,Georgia,serif;font-weight:500;font-size:22px;letter-spacing:-0.01em;margin:6px 0 0">RealSense</h3>
+      </div>
+      <div style="min-width:0"><p style="font-family:Newsreader,Georgia,serif;font-size:16.5px;line-height:1.55;color:#4A453B;margin:0 0 4px;max-width:64ch"><code style="font-family:'Space Mono',monospace;font-size:13px">--rgb --save-depth --ir-left --ir-right</code> records colour, depth and IR alongside each capture. <code style="font-family:'Space Mono',monospace;font-size:13px">spad camera check</code> reports whether the camera is usable. The binding comes from pip on Linux and conda-forge on macOS; capture on macOS needs <code style="font-family:'Space Mono',monospace;font-size:13px">sudo</code>.</p><div style="background:#14120E;padding:16px 20px;border-radius:2px;overflow-x:auto;margin-top:12px"><code style="font-family:'Space Mono',monospace;font-size:11.5px;line-height:1.9;color:#EDE7DA;white-space:pre">pip install -e '.[rgb]'                     # Linux
+conda install -c conda-forge pyrealsense2   # macOS
+spad st capture --rgb --save-depth</code></div></div>
+    </div>
+    
+    <div style="display:grid;grid-template-columns:minmax(0,260px) minmax(0,1fr);gap:40px;padding:30px 0;border-bottom:1px solid #E2DBCC">
+      <div>
+        <span style="font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:0.12em;color:#8A5F0B">06</span>
+        <h3 style="font-family:Newsreader,Georgia,serif;font-weight:500;font-size:22px;letter-spacing:-0.01em;margin:6px 0 0">Saved captures</h3>
+      </div>
+      <div style="min-width:0"><p style="font-family:Newsreader,Georgia,serif;font-size:16.5px;line-height:1.55;color:#4A453B;margin:0 0 4px;max-width:64ch">Each run writes to <code style="font-family:'Space Mono',monospace;font-size:13px">outputs/&lt;run&gt;/</code>: <code style="font-family:'Space Mono',monospace;font-size:13px">metadata.json</code>, the resolved <code style="font-family:'Space Mono',monospace;font-size:13px">config.yaml</code>, and one data file (<code style="font-family:'Space Mono',monospace;font-size:13px">npz</code> for the ST, <code style="font-family:'Space Mono',monospace;font-size:13px">pkl</code> for the TMF; switch with <code style="font-family:'Space Mono',monospace;font-size:13px">-f</code>). Every format loads to the same shape.</p><div style="background:#14120E;padding:16px 20px;border-radius:2px;overflow-x:auto;margin-top:12px"><code style="font-family:'Space Mono',monospace;font-size:11.5px;line-height:1.9;color:#EDE7DA;white-space:pre">from spad_capture.storage import load
+
+meta, frames = load("outputs/&lt;run&gt;/data.npz")
+frames[0]["histogram"]    # (H, W, num_bins)
+meta["sensor_layout"]["bin_centers_mm"]</code></div></div>
+    </div>
+  </section>
+
+  <div style="height:104px"></div>
+  <footer style="background:#14120E;color:#EFEAE0;padding:64px 32px 40px">
+  <div style="max-width:1180px;margin:0 auto;display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr) minmax(0,1fr);gap:48px">
+    <div>
+      <div style="font-family:Newsreader,Georgia,serif;font-size:22px;font-weight:500;letter-spacing:-0.01em">Extreme Sensing with Single Photons</div>
+      <p style="font-family:Newsreader,Georgia,serif;font-size:15px;line-height:1.6;color:#9A9384;max-width:34ch;margin:14px 0 0">Camera Culture Group, MIT Media Lab. Transient, time-of-flight and single-photon imaging research.</p>
+      <div style="font-family:'Space Mono',monospace;font-size:11px;letter-spacing:0.06em;color:#8C8574;margin-top:22px;line-height:1.8">77 Massachusetts Avenue<br>Cambridge, MA 02139</div>
+    </div>
+    <nav style="display:flex;flex-direction:column;gap:9px">
+      <span style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:#8C8574;margin-bottom:5px">The work</span>
+      <a href="projects.html" style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13.5px;color:#CFC8B8;text-decoration:none" class="hv3">Projects</a>
+      <a href="papers.html" style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13.5px;color:#CFC8B8;text-decoration:none" class="hv3">Papers</a>
+      <a href="spad-kit.html" style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13.5px;color:#CFC8B8;text-decoration:none" class="hv3">SPAD Kit</a>
+      <a href="resources.html" style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13.5px;color:#CFC8B8;text-decoration:none" class="hv3">Resources</a>
+    </nav>
+    <nav style="display:flex;flex-direction:column;gap:9px">
+      <span style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:#8C8574;margin-bottom:5px">The group</span>
+      <a href="index.html#people" style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13.5px;color:#CFC8B8;text-decoration:none" class="hv3">People</a>
+      <a href="media.html" style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13.5px;color:#CFC8B8;text-decoration:none" class="hv3">Media</a>
+      <a href="events.html" style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13.5px;color:#CFC8B8;text-decoration:none" class="hv3">Events</a>
+      <a href="sponsors.html" style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13.5px;color:#CFC8B8;text-decoration:none" class="hv3">Sponsors</a>
+      <a href="challenge.html" style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13.5px;color:#D9A63C;text-decoration:none" class="hv4">CVPR Challenge</a>
+    </nav>
+  </div>
+  <div style="max-width:1180px;margin:48px auto 0;padding-top:20px;border-top:1px solid #2A2620;display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:0.06em;color:#8C8574">
+    <span>Camera Culture Group · MIT Media Lab</span>
+    <a href="https://accessibility.mit.edu/" style="color:#8C8574;text-decoration:none" class="hv3">MIT Accessibility</a>
+  </div>
+</footer>
+</div>
+
+<script>
+(function(){
+  var page=(location.pathname.split('/').pop()||'index.html')||'index.html';
+  [].slice.call(document.querySelectorAll('nav a[data-nav]')).forEach(function(a){
+    if(a.getAttribute('href')===page&&a.getAttribute('data-nav')!=='Challenge'){
+      a.style.color='#171512';a.style.borderBottom='1px solid #8A5F0B';
+    }
+  });
+})();
+</script>
+</body>
+</html>

@@ -14,65 +14,67 @@ a{color:#8A5F0B}
 a:hover{color:#171512}
 input::placeholder{color:#A39B8A}
 .prow:hover{background:#EFEBE1}
-@keyframes photonRise{from{transform:scaleY(0.04);opacity:.25}to{transform:scaleY(1);opacity:1}}
-@keyframes photonSweep{0%{left:-6%}100%{left:104%}}
 .hv1:hover{color:#171512 !important;border-bottom:1px solid #8A5F0B !important}
 .hv2:hover{background:#8A5F0B !important;color:#FBF9F4 !important;border:1px solid #8A5F0B !important}
 .hv3:hover{color:#D9A63C !important}
 .hv4:hover{color:#EFEAE0 !important}
-.hv5:hover{border:1px solid #171512 !important;background:#171512 !important;color:#F5F2EB !important}
-.hv6:hover{background:#8A5F0B !important}
-.hv7:hover{border:1px solid #171512 !important}
+.hv5:hover{background:#F4EFE5 !important;color:#14120E !important;border:1px solid #F4EFE5 !important}
+.hv6:hover{background:#F4EFE5 !important}
+.hv7:hover{border:1px solid #F4EFE5 !important}
 .hv8:hover{background:#EFEBE1 !important}
 .hv9:hover{background:#E9E3D6 !important}
 .hv10:hover{color:#8A5F0B !important}
 .hv11:hover{color:#171512 !important}
 .hv12:hover{background:#EFEAE0 !important}
+.hv13:hover{background:#8A5F0B !important}
+.hv14:hover{border:1px solid #171512 !important}
 </style>
+<script src="reveal.js" defer></script>
+
 </head>
 <body>
 <div style="background:#F5F2EB">
   <div style="position:sticky;top:0;z-index:50;background:rgba(245,242,235,0.92);backdrop-filter:blur(10px);border-bottom:1px solid #E2DBCC">
   <div style="max-width:1180px;margin:0 auto;padding:0 32px;display:flex;align-items:center;gap:32px;min-height:60px;flex-wrap:wrap">
     <a href="index.html" style="display:flex;align-items:baseline;gap:9px;text-decoration:none;color:#171512;flex:0 0 auto">
-      <span style="font-family:Newsreader,Georgia,serif;font-size:19px;font-weight:500;letter-spacing:-0.01em">Single Photons</span>
+      <span style="font-family:Newsreader,Georgia,serif;font-size:19px;font-weight:500;letter-spacing:-0.01em;white-space:nowrap">Single Photons</span>
       <span style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:#6F6858">MIT</span>
     </a>
-    <nav style="display:flex;align-items:center;gap:20px;margin-left:auto;flex-wrap:wrap;row-gap:6px">
-      <a data-nav="Projects" href="projects.html" style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13px;letter-spacing:0.01em;color:#4A453B;text-decoration:none;padding:4px 0;border-bottom:1px solid transparent" class="hv1">Projects</a>
-      <a data-nav="Papers" href="papers.html" style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13px;color:#4A453B;text-decoration:none;padding:4px 0;border-bottom:1px solid transparent" class="hv1">Papers</a>
-      <a data-nav="Hardware" href="hardware.html" style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13px;color:#4A453B;text-decoration:none;padding:4px 0;border-bottom:1px solid transparent" class="hv1">Hardware</a>
-      <a data-nav="Code" href="code.html" style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13px;color:#4A453B;text-decoration:none;padding:4px 0;border-bottom:1px solid transparent" class="hv1">Code</a>
-      <a data-nav="Data" href="data.html" style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13px;color:#4A453B;text-decoration:none;padding:4px 0;border-bottom:1px solid transparent" class="hv1">Data</a>
-      <a data-nav="Media" href="media.html" style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13px;color:#4A453B;text-decoration:none;padding:4px 0;border-bottom:1px solid transparent" class="hv1">Media</a>
-      <a data-nav="Events" href="events.html" style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13px;color:#4A453B;text-decoration:none;padding:4px 0;border-bottom:1px solid transparent" class="hv1">Events</a>
-      <a data-nav="Sponsors" href="sponsors.html" style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13px;color:#4A453B;text-decoration:none;padding:4px 0;border-bottom:1px solid transparent" class="hv1">Sponsors</a>
-      <a data-nav="Challenge" href="challenge.html" style="font-family:'Space Mono',monospace;font-size:11px;letter-spacing:0.08em;text-transform:uppercase;color:#8A5F0B;text-decoration:none;border:1px solid #DCCBA6;padding:6px 11px;border-radius:2px" class="hv2">CVPR Challenge</a>
+    <nav style="display:flex;align-items:center;gap:17px;margin-left:auto;flex-wrap:wrap;row-gap:8px">
+      <a data-nav="Projects" href="projects.html" style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13px;letter-spacing:0.01em;color:#4A453B;text-decoration:none;padding:4px 0;border-bottom:1px solid transparent;white-space:nowrap" class="hv1">Projects</a>
+      <a data-nav="Papers" href="papers.html" style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13px;color:#4A453B;text-decoration:none;padding:4px 0;border-bottom:1px solid transparent;white-space:nowrap" class="hv1">Papers</a>
+      <a data-nav="SPAD Kit" href="spad-kit.html" style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13px;color:#4A453B;text-decoration:none;padding:4px 0;border-bottom:1px solid transparent;white-space:nowrap" class="hv1">SPAD Kit</a>
+      <a data-nav="Resources" href="resources.html" style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13px;color:#4A453B;text-decoration:none;padding:4px 0;border-bottom:1px solid transparent;white-space:nowrap" class="hv1">Resources</a>
+      <a data-nav="Media" href="media.html" style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13px;color:#4A453B;text-decoration:none;padding:4px 0;border-bottom:1px solid transparent;white-space:nowrap" class="hv1">Media</a>
+      <a data-nav="Events" href="events.html" style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13px;color:#4A453B;text-decoration:none;padding:4px 0;border-bottom:1px solid transparent;white-space:nowrap" class="hv1">Events</a>
+      <a data-nav="Sponsors" href="sponsors.html" style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13px;color:#4A453B;text-decoration:none;padding:4px 0;border-bottom:1px solid transparent;white-space:nowrap" class="hv1">Sponsors</a>
+      <a data-nav="Challenge" href="challenge.html" style="font-family:'Space Mono',monospace;font-size:11px;letter-spacing:0.08em;text-transform:uppercase;color:#8A5F0B;text-decoration:none;border:1px solid #DCCBA6;padding:6px 11px;border-radius:2px;white-space:nowrap" class="hv2">CVPR Challenge</a>
     </nav>
   </div>
 </div>
 
   <section style="max-width:1180px;margin:0 auto;padding:88px 32px 0">
-    <span style="font-family:'Space Mono',monospace;font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:#6F6858">Press &amp; broadcast</span>
-    <h1 style="font-family:Newsreader,Georgia,serif;font-weight:400;font-size:clamp(38px,5.2vw,68px);line-height:1.04;letter-spacing:-0.025em;margin:20px 0 0">Media</h1>
-    <p style="font-family:Newsreader,Georgia,serif;font-size:19px;line-height:1.55;color:#3E3931;margin:22px 0 0;max-width:62ch;text-wrap:pretty">Coverage of the group's single-photon imaging work, in the outlets' own words.</p>
+    <h1 style="font-family:Newsreader,Georgia,serif;font-weight:400;font-size:clamp(38px,5.2vw,68px);line-height:1.04;letter-spacing:-0.025em;margin:0">Media</h1>
   </section>
 
   <section style="max-width:1180px;margin:64px auto 0;padding:0 32px">
     <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:28px">
       <a href="https://www.youtube.com/watch?v=P-4pbFcERnk&t=790s" style="text-decoration:none;color:#171512;border:1px solid #E2DBCC;background:#FBF9F4;padding:26px 24px;display:flex;flex-direction:column;gap:10px" class="hv8">
+        <div style="margin:-26px -24px 8px;aspect-ratio:16/9;overflow:hidden;background:#E6E0D3;border-bottom:1px solid #E2DBCC"><img src="https://i.ytimg.com/vi/P-4pbFcERnk/hqdefault.jpg" alt="Veritasium video thumbnail" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block"></div>
         <span style="font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:0.12em;text-transform:uppercase;color:#8A5F0B">Veritasium</span>
         <h3 style="font-family:Newsreader,Georgia,serif;font-weight:500;font-size:23px;line-height:1.22;letter-spacing:-0.015em;margin:0">What happens if you keep slowing down?</h3>
-        <p style="font-family:Newsreader,Georgia,serif;font-size:16px;line-height:1.5;color:#5A544A;margin:0">Featuring Nikhil Behari. Segment begins at 13:10.</p>
+        <p style="font-family:Newsreader,Georgia,serif;font-size:16px;line-height:1.5;color:#5A544A;margin:0">Featuring Nikhil Behari.</p>
         <span style="font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:0.08em;color:#6F6858;margin-top:auto">YouTube →</span>
       </a>
       <a href="https://www.youtube.com/watch?v=yrcztoCOYL8&t=935s" style="text-decoration:none;color:#171512;border:1px solid #E2DBCC;background:#FBF9F4;padding:26px 24px;display:flex;flex-direction:column;gap:10px" class="hv8">
+        <div style="margin:-26px -24px 8px;aspect-ratio:16/9;overflow:hidden;background:#E6E0D3;border-bottom:1px solid #E2DBCC"><img src="https://cornar.media.mit.edu/images/applications/collisionavoidance.png" alt="Consumer LiDAR detecting a hidden person around a corner, from the project site" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block"></div>
         <span style="font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:0.12em;text-transform:uppercase;color:#8A5F0B">Nature Podcast</span>
         <h3 style="font-family:Newsreader,Georgia,serif;font-weight:500;font-size:23px;line-height:1.22;letter-spacing:-0.015em;margin:0">Using LiDAR to look around corners</h3>
         <p style="font-family:Newsreader,Georgia,serif;font-size:16px;line-height:1.5;color:#5A544A;margin:0">Interview accompanying the 2026 Nature paper.</p>
         <span style="font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:0.08em;color:#6F6858;margin-top:auto">Listen →</span>
       </a>
       <a href="https://spectrum.ieee.org/smartphone-grade-lidar" style="text-decoration:none;color:#171512;border:1px solid #E2DBCC;background:#FBF9F4;padding:26px 24px;display:flex;flex-direction:column;gap:10px" class="hv8">
+        <div style="margin:-26px -24px 8px;aspect-ratio:16/9;overflow:hidden;background:#E6E0D3;border-bottom:1px solid #E2DBCC"><img src="https://spectrum.ieee.org/media-library/image.jpg?id=66765057&amp;width=1200&amp;height=600&amp;coordinates=0%2C281%2C0%2C219" alt="Hidden figure and its reconstructed silhouette, from IEEE Spectrum" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block"></div>
         <span style="font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:0.12em;text-transform:uppercase;color:#8A5F0B">IEEE Spectrum</span>
         <h3 style="font-family:Newsreader,Georgia,serif;font-weight:500;font-size:23px;line-height:1.22;letter-spacing:-0.015em;margin:0">Low-cost systems could improve robots, autonomous vehicles</h3>
         <p style="font-family:Newsreader,Georgia,serif;font-size:16px;line-height:1.5;color:#5A544A;margin:0"></p>
@@ -83,8 +85,35 @@ input::placeholder{color:#A39B8A}
 
   <section style="max-width:1180px;margin:72px auto 0;padding:0 32px">
     <div style="display:flex;align-items:baseline;justify-content:space-between;gap:24px;border-bottom:1px solid #171512;padding-bottom:12px;flex-wrap:wrap">
+      <h2 style="font-family:Newsreader,Georgia,serif;font-weight:400;font-size:clamp(26px,3vw,38px);letter-spacing:-0.02em;margin:0">TED talks by Ramesh Raskar</h2>
+    </div>
+    <div style="display:flex;flex-direction:column">
+      <a href="https://www.ted.com/talks/ramesh_raskar_a_camera_that_takes_one_trillion_frames_per_second" style="display:grid;grid-template-columns:170px minmax(0,1fr);gap:24px;padding:18px 0;border-bottom:1px solid #E2DBCC;text-decoration:none;color:#171512;align-items:baseline" class="hv8">
+        <span style="font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:0.1em;text-transform:uppercase;color:#6F6858">TEDGlobal 2012</span>
+        <span style="font-family:Newsreader,Georgia,serif;font-size:18px;line-height:1.4;font-style:italic">Imaging at a trillion frames per second</span>
+      </a>
+      <a href="https://www.ted.com/talks/ramesh_raskar_god_s_eye_view_will_global_ai_empower_us_or_destroy_us" style="display:grid;grid-template-columns:170px minmax(0,1fr);gap:24px;padding:18px 0;border-bottom:1px solid #E2DBCC;text-decoration:none;color:#171512;align-items:baseline" class="hv8">
+        <span style="font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:0.1em;text-transform:uppercase;color:#6F6858">TEDx</span>
+        <span style="font-family:Newsreader,Georgia,serif;font-size:18px;line-height:1.4;font-style:italic">God's Eye View: Will global AI empower us or destroy us?</span>
+      </a>
+      <a href="https://www.ted.com/talks/ramesh_raskar_waze_for_our_pandemic_journey" style="display:grid;grid-template-columns:170px minmax(0,1fr);gap:24px;padding:18px 0;border-bottom:1px solid #E2DBCC;text-decoration:none;color:#171512;align-items:baseline" class="hv8">
+        <span style="font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:0.1em;text-transform:uppercase;color:#6F6858">TEDx</span>
+        <span style="font-family:Newsreader,Georgia,serif;font-size:18px;line-height:1.4;font-style:italic">Waze for our pandemic journey</span>
+      </a>
+      <a href="https://www.tedmed.com/speakers/show?id=102077" style="display:grid;grid-template-columns:170px minmax(0,1fr);gap:24px;padding:18px 0;border-bottom:1px solid #E2DBCC;text-decoration:none;color:#171512;align-items:baseline" class="hv8">
+        <span style="font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:0.1em;text-transform:uppercase;color:#6F6858">TEDMED</span>
+        <span style="font-family:Newsreader,Georgia,serif;font-size:18px;line-height:1.4;font-style:italic">Computational photography and the future of medicine</span>
+      </a>
+      <a href="https://tedxboston.org/speaker/raskar" style="display:grid;grid-template-columns:170px minmax(0,1fr);gap:24px;padding:18px 0;border-bottom:1px solid #E2DBCC;text-decoration:none;color:#171512;align-items:baseline" class="hv8">
+        <span style="font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:0.1em;text-transform:uppercase;color:#6F6858">TEDxBoston</span>
+        <span style="font-family:Newsreader,Georgia,serif;font-size:18px;line-height:1.4;font-style:italic">Eye exams with a $1 device attached to a phone</span>
+      </a>
+    </div>
+  </section>
+
+  <section style="max-width:1180px;margin:72px auto 0;padding:0 32px">
+    <div style="display:flex;align-items:baseline;justify-content:space-between;gap:24px;border-bottom:1px solid #171512;padding-bottom:12px;flex-wrap:wrap">
       <h2 style="font-family:Newsreader,Georgia,serif;font-weight:400;font-size:clamp(26px,3vw,38px);letter-spacing:-0.02em;margin:0">Also written about in</h2>
-      <span style="font-family:'Space Mono',monospace;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:#6F6858">2026</span>
     </div>
     <div style="display:flex;flex-direction:column">
       <a href="https://www.media.mit.edu/posts/mit-media-lab-researchers-turn-everyday-lidar-into-an-around-the-corner-camera/" style="display:grid;grid-template-columns:170px minmax(0,1fr);gap:24px;padding:18px 0;border-bottom:1px solid #E2DBCC;text-decoration:none;color:#171512;align-items:baseline" class="hv8">
@@ -128,10 +157,6 @@ input::placeholder{color:#A39B8A}
         <span style="font-family:Newsreader,Georgia,serif;font-size:18px;line-height:1.4;font-style:italic">Seeing around corners using smartphone-grade LiDAR</span>
       </a>
     </div>
-    <div style="border:1px solid #E2DBCC;background:#EFEBE1;padding:22px 24px;margin-top:44px">
-      <span style="font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:0.12em;text-transform:uppercase;color:#8A5F0B">Gaps to fill</span>
-      <p style="font-family:Newsreader,Georgia,serif;font-size:16px;line-height:1.6;color:#4A453B;margin:9px 0 0;max-width:74ch">This list covers the 2026 Nature release. Coverage of the 2012 and 2013 work — which was extensive — is not here yet, and neither are talks, lectures or documentary appearances. Send me those and I'll add a chronological press archive.</p>
-    </div>
   </section>
 
   <div style="height:104px"></div>
@@ -139,16 +164,15 @@ input::placeholder{color:#A39B8A}
   <div style="max-width:1180px;margin:0 auto;display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr) minmax(0,1fr);gap:48px">
     <div>
       <div style="font-family:Newsreader,Georgia,serif;font-size:22px;font-weight:500;letter-spacing:-0.01em">Extreme Sensing with Single Photons</div>
-      <p style="font-family:Newsreader,Georgia,serif;font-size:15px;line-height:1.6;color:#9A9384;max-width:34ch;margin:14px 0 0">Camera Culture Group, MIT Media Lab. Transient, time-of-flight and single-photon imaging research, 2009 to today.</p>
+      <p style="font-family:Newsreader,Georgia,serif;font-size:15px;line-height:1.6;color:#9A9384;max-width:34ch;margin:14px 0 0">Camera Culture Group, MIT Media Lab. Transient, time-of-flight and single-photon imaging research.</p>
       <div style="font-family:'Space Mono',monospace;font-size:11px;letter-spacing:0.06em;color:#8C8574;margin-top:22px;line-height:1.8">77 Massachusetts Avenue<br>Cambridge, MA 02139</div>
     </div>
     <nav style="display:flex;flex-direction:column;gap:9px">
       <span style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:#8C8574;margin-bottom:5px">The work</span>
       <a href="projects.html" style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13.5px;color:#CFC8B8;text-decoration:none" class="hv3">Projects</a>
       <a href="papers.html" style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13.5px;color:#CFC8B8;text-decoration:none" class="hv3">Papers</a>
-      <a href="hardware.html" style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13.5px;color:#CFC8B8;text-decoration:none" class="hv3">Hardware</a>
-      <a href="code.html" style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13.5px;color:#CFC8B8;text-decoration:none" class="hv3">Code</a>
-      <a href="data.html" style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13.5px;color:#CFC8B8;text-decoration:none" class="hv3">Data</a>
+      <a href="spad-kit.html" style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13.5px;color:#CFC8B8;text-decoration:none" class="hv3">SPAD Kit</a>
+      <a href="resources.html" style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13.5px;color:#CFC8B8;text-decoration:none" class="hv3">Resources</a>
     </nav>
     <nav style="display:flex;flex-direction:column;gap:9px">
       <span style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:#8C8574;margin-bottom:5px">The group</span>
